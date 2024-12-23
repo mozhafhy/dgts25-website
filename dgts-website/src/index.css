@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-size: var(--txt-xs);
+  line-height: var(--lh-xs);
+  margin: 0;
+}
+
+:root {
+  --def-light: hsl(0, 0%, 100%);
+  --def-white: hsl(40, 95%, 92%);
+  --def-black: hsl(201, 100%, 14%);
+  --primary: hsl(203, 38%, 57%);
+  --accent: hsl(340, 55%, 22%);
+  --secondary: hsl(352, 76%, 35%);
+
+  /* ? Linear Grad */
+  --talkshow-child: linear-gradient(90deg, var(--accent) 25%, var(--def-black) 100%);
+  --talkshow-child-pressed: linear-gradient(90deg, var(--def-black) 50%, var(--def-white) 100%);
+  --pressed: linear-gradient(90deg, var(--accent) 25%, var(--secondary) 100%);
+
+  /* ? Font Size & Line Height */
+  --txt-xs: 0.75rem;
+  --lh-xs: 1rem;
+
+  --txt-base: 1rem;
+  --lh-base: 1.5rem;
+
+  --txt-2xl: 1.5rem;
+  --lh-2xl: 2rem;
+
+  --txt-3xl: 1.875rem;
+  --lh-3xl: 2.25rem;
+
+  --txt-4xl: 2.25rem;
+  --lh-4xl: 2.5rem;
+
+  --txt-5xl: 3rem;
+  --lh-4xl: 3rem;
+
+  /* ? Shadow */
+  --def-shadow: 3px 4px 6px hsla(201, 100, 14, 0.4);
+}
