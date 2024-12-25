@@ -8,7 +8,7 @@
   margin: 0;
 }
 
-:root {
+#root {
   --def-light: hsl(0, 0%, 100%);
   --def-white: hsl(40, 95%, 92%);
   --def-black: hsl(201, 100%, 14%);
@@ -42,4 +42,14 @@
 
   /* ? Shadow */
   --def-shadow: 3px 4px 6px hsla(201, 100, 14, 0.4);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: var(--def-light);
+  text-decoration: none;
 }

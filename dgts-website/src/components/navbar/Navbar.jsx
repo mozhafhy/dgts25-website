@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import Logo from "../../assets/react.svg";
+import Logo from "../../assets/logo.svg";
 import Drop from "../../assets/dropdown.svg";
 
 export default function Navbar() {
@@ -9,8 +9,8 @@ export default function Navbar() {
         <img className="logo" src={Logo} />
         <ul className="opsi">
           <li className="dropdown-presensi">
-            <u id="label">Presensi</u>
-            <img src={Drop} />
+            Presensi
+            <img id="label" src={Drop} />
           </li>
           <li>
             <a className="link" href="/">
