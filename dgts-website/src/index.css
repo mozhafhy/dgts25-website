@@ -19,7 +19,7 @@
   /* ? Linear Grad */
   --talkshow-child: linear-gradient(90deg, var(--accent) 25%, var(--def-black) 100%);
   --talkshow-child-pressed: linear-gradient(90deg, var(--def-black) 50%, var(--def-white) 100%);
-  --pressed: linear-gradient(90deg, var(--accent) 25%, var(--secondary) 100%);
+  --pressed: linear-gradient(to right, var(--accent), var(--secondary));
 
   /* ? Font Size & Line Height */
   --txt-xs: 0.75rem;

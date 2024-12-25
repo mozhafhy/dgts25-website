@@ -1,5 +1,6 @@
+/* ? Style basis navbar --> function Navbar*/
 .navbar {
-  height: 48px;
+  height: 3rem;
   position: sticky;
   top: 0;
   background-color: var(--def-black);
@@ -11,35 +12,89 @@
   box-shadow: var(--def-shadow);
 }
 
-.navbar .logo {
-  height: 1.875rem;
+/* ? Logo DGTS */
+.logo {
+  height: 1.5rem;
 }
 
-.navbar .opsi {
+/* ? Style opsi utama (presensi, tiket, etc.) */
+.opsi-container {
+  max-width: 100%;
+  height: 100%;
   display: flex;
-  gap: 1rem;
   align-items: center;
+  justify-items: flex-end;
 }
-
-.navbar .opsi .dropdown-presensi {
-  align-items: center;
-  padding: 5px 5px;
-  background-color: var(--def-light);
-  border-radius: 5px;
-  color: var(--def-black);
-  
-}
-
-svg path{
-  fill: var(--def-black);
-}
-
-.navbar .opsi .dropdown-presensi #label {
-  margin: 0 0 0 5px;
-}
-
-.navbar .opsi .dropdown-presensi:hover {
-  padding: 9.5% 5px;
-  border-radius: 0;
+.opsi-item {
+  padding: 0 0.5rem;
   cursor: pointer;
+}
+.opsi-item:active, .active {
+  background-color: var(--def-light);
+  color: grey;
+  font-weight: bold;
+  padding: 1.125rem 0.5rem;
+  cursor: pointer;
+}
+
+/* ? Style utama dropdown --> function DropdownMenu */
+.dropdown {
+  position: absolute;
+  top: 3rem;
+  width: 241px;
+  background: var(--primary);
+  overflow: hidden;
+
+  transition: height 300ms ease;
+}
+
+/* ? Style item dropdown --> function DropdownItem */
+.menu-item {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-item:active {
+  background: var(--pressed);
+  font-weight: bold;
+}
+
+/* ? Transisi nested dropdown */
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all 300ms ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all 300ms ease;
+}
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all 300ms ease;
+}
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all 300ms ease;
+}
+
+/* ? Style menu untuk Talkshow */
+.menu-talkshow > *:first-child {
+  font-weight: bold;
+  background: var(--pressed);
+}
+.menu-talkshow > *:not(:first-child):active {
+  background: var(--talkshow-child-pressed);
 }
