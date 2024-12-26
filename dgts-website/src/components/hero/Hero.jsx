@@ -32,7 +32,7 @@ export default function Hero() {
               DGTS 2025 Here
             </h1>
             <button type="button" class="btn btn-light btn-underline" style={{ textDecoration: "underline" }}>
-              Grab The Ticket Now!!{" >>>> "}
+              Grab The Ticket Now!!{" >> "}
             </button>
           </div>
         </div>

@@ -29,7 +29,8 @@
   padding: 0 0.5rem;
   cursor: pointer;
 }
-.opsi-item:active, .active {
+.opsi-item:active,
+.active {
   background-color: var(--def-light);
   color: grey;
   font-weight: bold;
