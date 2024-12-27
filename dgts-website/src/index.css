@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 * {
+  color: var(--def-black);
   box-sizing: border-box;
   font-family: "Roboto";
   font-size: var(--txt-xs);
@@ -31,7 +32,7 @@
   --txt-2xl: 1.5rem;
   --lh-2xl: 2rem;
 
-  --txt-3xl: 1.875rem;
+  --txt-3xl: 28px;
   --lh-3xl: 2.25rem;
 
   --txt-4xl: 2.25rem;

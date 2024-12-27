@@ -12,7 +12,7 @@ export default function About() {
       <div className="about-container">
         <div className="about">
           <h1 id="title" className="abt">
-            About
+            About DGTS 2025
           </h1>
           <p id="desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -24,7 +24,7 @@ export default function About() {
 
         <div className="why">
           <h6 id="title" className="why">
-            Why
+            Why DGTS 2025?
           </h6>
           <p id="desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
