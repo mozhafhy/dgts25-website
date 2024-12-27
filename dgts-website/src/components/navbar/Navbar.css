@@ -19,6 +19,7 @@
 
 /* ? Style opsi utama (presensi, tiket, etc.) */
 .opsi-container {
+  margin-bottom: 0;
   max-width: 100%;
   height: 100%;
   display: flex;
@@ -32,7 +33,7 @@
 .opsi-item:active,
 .active {
   background-color: var(--def-light);
-  color: grey;
+  color: var(--def-black);
   font-weight: bold;
   padding: 1.125rem 0.5rem;
   cursor: pointer;

@@ -1,3 +1,7 @@
+.row > * {
+  z-index: -1;
+}
+
 .btn-underline {
   text-decoration: underline;
   color: var(--def-black);
