@@ -1,3 +1,4 @@
 .btn-underline {
   text-decoration: underline;
+  color: var(--def-black);
 }

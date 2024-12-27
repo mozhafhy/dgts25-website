@@ -10,7 +10,7 @@ export default function Hero() {
           <img
             src={hero}
             alt="Frame 15"
-            className="img-fluid rounded shadow-lg positionn-relative"
+            className="img-fluid rounded shadow-lg  position-relative"
             style={{
               width: "100%",
               height: "100vh",
@@ -31,7 +31,7 @@ export default function Hero() {
               Some Words About <br />
               DGTS 2025 Here
             </h1>
-            <button type="button" class="btn btn-light btn-underline" style={{ textDecoration: "underline" }}>
+            <button type="button" class="btn btn-light btn-underline" style={{ textDecoration: "underline", color: "var(--def-black)" }}>
               Grab The Ticket Now!!{" >> "}
             </button>
           </div>
