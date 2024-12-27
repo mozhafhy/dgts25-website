@@ -4,7 +4,7 @@ import React from "react";
 export default function Sponsor() {
   return (
     <div
-      className="container  justify-content-center align-items-center"
+      className="container d-flex justify-content-center align-items-center"
       style={{
         height: "10vh",
         backgroundColor: "transparent",
