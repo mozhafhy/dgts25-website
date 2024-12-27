@@ -1,6 +1,5 @@
 import logo from "../../assets/logo.svg";
 import "./sponsor.css";
-import React from "react";
 export default function Sponsor() {
   return (
     <div

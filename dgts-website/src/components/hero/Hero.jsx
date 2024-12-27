@@ -1,7 +1,5 @@
 import "./hero.css";
-import React from "react";
 import hero from "../../assets/Frame 15.png";
-import arrow from "../../assets/arrow.svg";
 export default function Hero() {
   return (
     <div className="row">
@@ -31,7 +29,11 @@ export default function Hero() {
               Some Words About <br />
               DGTS 2025 Here
             </h1>
-            <button type="button" class="btn btn-light btn-underline" style={{ textDecoration: "underline", color: "var(--def-black)" }}>
+            <button
+              type="button"
+              className="btn btn-light btn-underline"
+              style={{ textDecoration: "underline", color: "var(--def-black)" }}
+            >
               Grab The Ticket Now!!{" >> "}
             </button>
           </div>
