@@ -5,6 +5,7 @@ import dum from "../../../assets/roadshow.jpg";
 export default function Inti() {
   return (
     <div className="panit-container">
+      <h1 id="panit-title">Who&apos;s Behind DGTS 2025?</h1>
       <Panitia
         jabatan="ketua"
         foto={dummy}

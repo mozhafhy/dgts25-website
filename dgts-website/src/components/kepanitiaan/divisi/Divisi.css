@@ -1,0 +1,47 @@
+.divisi-container {
+  padding: 0 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+#divisi {
+  display: flex;
+  gap: 0.75rem;
+}
+
+#foto-co {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: center;
+}
+#info > * > p {
+  margin: 0;
+}
+
+.nama-divisi {
+  font-size: var(--txt-base);
+  line-height: var(--lh-base);
+  font-weight: bold;
+}
+.deskripsi-divisi {
+  color: var(--secondary);
+}
+
+.pp-anggota {
+  height: 40px;
+  width: 240px;
+  background-color: var(--def-black);
+  color: #fff;
+  text-align: center;
+}

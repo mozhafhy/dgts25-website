@@ -1,5 +1,11 @@
 .panit-container {
-  margin: 2.25rem 1.25rem;
+  padding: 0 1.25rem;
+  margin: 2.25rem auto;
+}
+#panit-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 /* ? Ketua */
