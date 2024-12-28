@@ -1,3 +1,52 @@
-.row .col .card img {
+.carddiv .row .col .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 18rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff7e6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.card-body {
+  text-align: center;
+  color: #2c3e50;
+  background-color: #fff7e6;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.event-theme {
+  font-size: 1rem;
+  font-style: italic;
+  color: #8e44ad;
+  margin: 0.5rem 0;
+}
+
+.divider {
   width: 50%;
+  height: 2px;
+  background-color: #c0392b;
+  margin: 0.5rem 0;
 }
