@@ -1,5 +1,5 @@
 import "./hero.css";
-import hero from "../../assets/Frame 15.png";
+import hero from "../../assets/talkshow.jpg";
 export default function Hero() {
   return (
     <div className="row">
@@ -14,6 +14,7 @@ export default function Hero() {
               height: "100vh",
               objectFit: "cover",
               objectPosition: "center",
+              overflowX: "hidden",
             }}
           />
           <div
@@ -21,6 +22,7 @@ export default function Hero() {
             style={{
               top: "30%",
               left: "5%",
+              right: "5%",
 
               textAlign: "left",
             }}
