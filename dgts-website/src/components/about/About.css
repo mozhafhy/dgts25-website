@@ -1,6 +1,5 @@
 .profile-container {
   background-color: var(--def-black);
-  color: var(--def-light);
   margin: 2.25rem 1.25rem;
   padding: 0.75rem 1.25rem;
   display: flex;
@@ -10,6 +9,7 @@
 
 .about-container > * > * {
   margin-bottom: 0;
+  color: var(--def-light);
 }
 
 .about-container {
@@ -19,6 +19,7 @@
 }
 
 #title {
+  color: var(--def-white);
   font-weight: bold;
 }
 
