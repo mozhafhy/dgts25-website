@@ -1,0 +1,28 @@
+footer {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: var(--def-black);
+  color: var(--def-white);
+  margin-top: 6rem;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.row {
+  width: 100%;
+}
+
+.col {
+  align-items: center;
+  text-align: center;
+}
+
+i {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
