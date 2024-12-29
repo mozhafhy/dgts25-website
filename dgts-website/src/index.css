@@ -22,7 +22,7 @@ body {
 
   /* ? Linear Grad */
   --talkshow-child: linear-gradient(90deg, var(--accent) 25%, var(--def-black) 100%);
-  --talkshow-child-pressed: linear-gradient(90deg, var(--def-black) 50%, var(--def-white) 100%);
+  --talkshow-child-pressed: linear-gradient(to right, var(--def-black) 50%, var(--def-white) 100%);
   --pressed: linear-gradient(to right, var(--accent), var(--secondary));
 
   /* ? Font Size & Line Height */
@@ -46,6 +46,9 @@ body {
 
   /* ? Shadow */
   --def-shadow: 3px 4px 6px hsla(201, 100, 14, 0.4);
+
+  /* ? Navbar heigth */
+  --nav-heigth: 56px;
 }
 
 ul {
@@ -55,5 +58,9 @@ ul {
 
 a {
   color: var(--def-light);
-  text-decoration: none;
+  /* text-decoration: none; */
+}
+
+button {
+  border: none;
 }
