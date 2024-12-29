@@ -1,4 +1,4 @@
-.carddiv .row .col .card {
+.card-container .card-row .card {
   border: 2px solid var(--def-black);
   border-radius: 4px;
   width: 20rem;
@@ -52,10 +52,21 @@
   margin: 0.5rem 0;
 } */
 
-.img-carousel {
+.card-container {
   display: flex;
-  white-space: nowrap;
-  overflow: auto;
-  gap: 1rem;
-  scrollbar-width: none;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 10px;
+  width: 300px;
 }
