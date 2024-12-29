@@ -47,6 +47,13 @@
   scrollbar-width: none;
   gap: 1.5rem;
 }
+
+@media screen and (min-width: 950px) {
+  .anggota-container {
+    justify-content: center;
+  }
+}
+
 #anggota {
   display: flex;
 }
@@ -65,7 +72,6 @@
 }
 .nama-anggota {
   width: 118px;
-  max-width: 12rem;
   font-size: var(--txt-base);
   line-height: var(--lh-base);
   font-weight: bold;

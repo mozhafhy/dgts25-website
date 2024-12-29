@@ -35,6 +35,22 @@ export default function Divisi() {
         deskripsi="Some descriptions here"
         // TODO: foto anggota
       />
+
+      <Sie
+        isOddChild={false}
+        fotoCO={dummy}
+        divisi="Divisi 5"
+        deskripsi="Some descriptions here"
+        // TODO: foto anggota
+      />
+
+      <Sie
+        isOddChild={true}
+        fotoCO={dummy}
+        divisi="Divisi 6"
+        deskripsi="Some descriptions here"
+        // TODO: foto anggota
+      />
     </div>
   );
 }
