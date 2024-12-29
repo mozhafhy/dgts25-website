@@ -72,7 +72,7 @@
   width: 300px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .card-container {
     justify-content: flex-start;
   }

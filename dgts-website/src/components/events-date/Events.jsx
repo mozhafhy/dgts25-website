@@ -12,8 +12,8 @@ export default function Events() {
 
       <div className="card-container mt-3 carddiv ">
         <div className="card-row text-center">
-          <div className="card shadow-lg">
-            <h5 className="card-title">ROADSHOW</h5>
+          <div className="card shadow-p">
+            <h5 className="card-title">Roadshow</h5>
             <img src={line1} alt="" />
             <p className="event-theme">"Explore Your Path, Ignite Your Future"</p>
             <img src={foto1} className="card-img-top" alt="Event 1" />
@@ -24,8 +24,8 @@ export default function Events() {
             </div>
           </div>
 
-          <div className="card shadow-lg">
-            <h5 className="card-title">CAMPUS EXPO</h5>
+          <div className="card shadow-p">
+            <h5 className="card-title">Campus Expo</h5>
             <img src={line1} alt="" />
             <p className="event-theme">"Explore Possibilities, Embrace Opportunities"</p>
             <img src={foto2} className="card-img-top" alt="Event 2" />
@@ -36,8 +36,8 @@ export default function Events() {
             </div>
           </div>
 
-          <div className="card shadow-lg">
-            <h5 className="card-title">BEDAH JURUSAN</h5>
+          <div className="card shadow-p">
+            <h5 className="card-title">Bedah Jurusan</h5>
             <img src={line1} alt="" />
             <p className="event-theme text-center">"Know Your dreams, Shape Your Mission, and Decide Your Major"</p>
             <img src={foto3} className="card-img-top" alt="Event 3" />
@@ -48,8 +48,8 @@ export default function Events() {
             </div>
           </div>
 
-          <div className="card shadow-lg">
-            <h5 className="card-title">TALKSHOW</h5>
+          <div className="card shadow-p">
+            <h5 className="card-title">Talkshow</h5>
             <img src={line1} alt="" />
             <p className="event-theme">"Dare to Dream, Dare to Achieve"</p>
             <img src={foto4} className="card-img-top" alt="Event 4" />
