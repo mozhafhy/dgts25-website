@@ -58,6 +58,7 @@
   overflow-x: auto;
   padding: 20px;
   align-items: center;
+  scrollbar-width: none;
 }
 
 .card-row {
@@ -69,4 +70,10 @@
   flex: 0 0 auto;
   margin: 10px;
   width: 300px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: flex-start;
+  }
 }
