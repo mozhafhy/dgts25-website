@@ -4,12 +4,19 @@ import Logo from "../../assets/typography.svg";
 import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
+// ! Icon dropdown
 const dropdown = (
-  <svg className="dropdown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-    <path d="M480-360 280-560h400L480-360Z" />
+  <svg
+    width="10"
+    height="6"
+    viewBox="0 0 10 6"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#ffffff" />
   </svg>
 );
 
+// ! Main func
 export default function Navbar() {
   return (
     <Nav>
@@ -22,27 +29,43 @@ export default function Navbar() {
     </Nav>
   );
 }
+
+// ! Nav container
 function Nav(props) {
   return (
-    <nav className="navbar">
+    <nav className="navbar-container">
       <img className="logo" src={Logo} />
       <ul className="opsi-container">{props.children}</ul>
     </nav>
   );
 }
 
+// ! Nav item
 function NavItem(props) {
   const [open, setOpen] = useState(false);
   return (
     <li>
-      <a id={open && props.isDropdown ? "active" : "opsi-item"} href={props.href} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(!open)} className="h6">
-        {props.item}
-      </a>
+      <button
+        id={props.isDropdown ? (open ? "active" : "is-dropdown") : "opsi-item"}
+        onClick={() => setOpen(!open)}
+      >
+        <a
+          href={props.href}
+          className="h6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {props.item}
+        </a>
+        {/* Kalo dia dropdown, kasi icon dropdown di sebelahnya */}
+        {props.isDropdown ? dropdown : ""}
+      </button>
       {open && props.children}
     </li>
   );
 }
 
+// ! Dropdown menu
 function DropdownMenu() {
   const [activeMenu, setActiveMenu] = useState("main");
   const [menuHeigth, setMenuHeight] = useState(null);
@@ -54,7 +77,13 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a href={props.href} target="_blank" className="menu-item" rel="noopener noreferrer" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+      <a
+        href={props.href}
+        target="_blank"
+        className="dropdown-item"
+        rel="noopener noreferrer"
+        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
+      >
         {props.children}
       </a>
     );
@@ -62,7 +91,13 @@ function DropdownMenu() {
 
   return (
     <div className="dropdown" style={{ height: menuHeigth }}>
-      <CSSTransition in={activeMenu === "main"} unmountOnExit timeout={300} classNames="menu-primary" onEnter={calcHeight}>
+      <CSSTransition
+        in={activeMenu === "main"}
+        unmountOnExit
+        timeout={300}
+        classNames="menu-primary"
+        onEnter={calcHeight}
+      >
         <div id="menu" className="menu-all">
           <DropdownItem href="/">Roadshow</DropdownItem>
           <DropdownItem href="/">Bedah Jurusan</DropdownItem>
@@ -71,7 +106,13 @@ function DropdownMenu() {
         </div>
       </CSSTransition>
 
-      <CSSTransition in={activeMenu === "opsi"} unmountOnExit timeout={300} classNames="menu-secondary" onEnter={calcHeight}>
+      <CSSTransition
+        in={activeMenu === "opsi"}
+        unmountOnExit
+        timeout={300}
+        classNames="menu-secondary"
+        onEnter={calcHeight}
+      >
         <div id="menu" className="menu-talkshow">
           <DropdownItem goToMenu="main">Talkshow</DropdownItem>
           <DropdownItem href="/">Ruang Manifestasi</DropdownItem>
@@ -82,6 +123,7 @@ function DropdownMenu() {
   );
 }
 
+// ! Some validations
 NavItem.propTypes = {
   item: PropTypes.element,
   href: PropTypes.element,
