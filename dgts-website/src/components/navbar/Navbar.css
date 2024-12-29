@@ -10,6 +10,7 @@
   padding: 0 1.25rem;
   align-items: center;
   box-shadow: var(--def-shadow);
+  z-index: 1000;
 }
 
 /* ? Logo DGTS */
@@ -30,7 +31,7 @@
   padding: 0 0.5rem;
   cursor: pointer;
 }
-.opsi-item:active,
+.opsi-item:hover,
 .active {
   background-color: var(--def-light);
   color: var(--def-black);
@@ -58,7 +59,7 @@
   padding: 10px;
   cursor: pointer;
 }
-.menu-item:active {
+.menu-item:hover {
   background: var(--pressed);
   font-weight: bold;
 }
