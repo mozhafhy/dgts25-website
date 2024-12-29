@@ -5,7 +5,9 @@ import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
 const dropdown = (
-  <svg className="dropdown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+  <svg className="dropdown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+    <path d="M480-360 280-560h400L480-360Z" />
+  </svg>
 );
 
 export default function Navbar() {
@@ -33,13 +35,7 @@ function NavItem(props) {
   const [open, setOpen] = useState(false);
   return (
     <li>
-      <a
-        className={open && props.isDropdown ? "active" : "opsi-item"}
-        href={props.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => setOpen(!open)}
-      >
+      <a id={open && props.isDropdown ? "active" : "opsi-item"} href={props.href} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(!open)} className="h6">
         {props.item}
       </a>
       {open && props.children}
@@ -58,13 +54,7 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a
-        href={props.href}
-        target="_blank"
-        className="menu-item"
-        rel="noopener noreferrer"
-        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
-      >
+      <a href={props.href} target="_blank" className="menu-item" rel="noopener noreferrer" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         {props.children}
       </a>
     );
@@ -72,13 +62,7 @@ function DropdownMenu() {
 
   return (
     <div className="dropdown" style={{ height: menuHeigth }}>
-      <CSSTransition
-        in={activeMenu === "main"}
-        unmountOnExit
-        timeout={300}
-        classNames="menu-primary"
-        onEnter={calcHeight}
-      >
+      <CSSTransition in={activeMenu === "main"} unmountOnExit timeout={300} classNames="menu-primary" onEnter={calcHeight}>
         <div id="menu" className="menu-all">
           <DropdownItem href="/">Roadshow</DropdownItem>
           <DropdownItem href="/">Bedah Jurusan</DropdownItem>
@@ -87,13 +71,7 @@ function DropdownMenu() {
         </div>
       </CSSTransition>
 
-      <CSSTransition
-        in={activeMenu === "opsi"}
-        unmountOnExit
-        timeout={300}
-        classNames="menu-secondary"
-        onEnter={calcHeight}
-      >
+      <CSSTransition in={activeMenu === "opsi"} unmountOnExit timeout={300} classNames="menu-secondary" onEnter={calcHeight}>
         <div id="menu" className="menu-talkshow">
           <DropdownItem goToMenu="main">Talkshow</DropdownItem>
           <DropdownItem href="/">Ruang Manifestasi</DropdownItem>
@@ -117,4 +95,3 @@ NavItem.defaultProps = {
 Nav.propTypes = {
   children: PropTypes.element,
 };
-

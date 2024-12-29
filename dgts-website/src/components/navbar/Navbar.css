@@ -27,12 +27,12 @@
   align-items: center;
   justify-items: flex-end;
 }
-.opsi-item {
+#opsi-item {
   padding: 0 0.5rem;
   cursor: pointer;
 }
-.opsi-item:hover,
-.active {
+#opsi-item:hover,
+#active {
   background-color: var(--def-light);
   color: var(--def-black);
   font-weight: bold;

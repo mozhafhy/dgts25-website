@@ -1,5 +1,5 @@
 import "./hero.css";
-import hero from "../../assets/talkshow.jpg";
+import hero from "../../assets/Frame 15.png";
 export default function Hero() {
   return (
     <div className="row">
@@ -14,7 +14,6 @@ export default function Hero() {
               height: "100vh",
               objectFit: "cover",
               objectPosition: "center",
-              overflowX: "hidden",
             }}
           />
           <div
@@ -31,11 +30,7 @@ export default function Hero() {
               Some Words About <br />
               DGTS 2025 Here
             </h1>
-            <button
-              type="button"
-              className="btn btn-light btn-underline"
-              style={{ textDecoration: "underline", color: "var(--def-black)" }}
-            >
+            <button type="button" className="btn btn-light btn-underline" style={{ textDecoration: "underline", color: "var(--def-black)", zIndex: 100 }}>
               Grab The Ticket Now!!{" >> "}
             </button>
           </div>
