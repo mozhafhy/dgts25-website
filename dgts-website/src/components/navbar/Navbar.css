@@ -59,7 +59,7 @@
   padding: 10px;
   cursor: pointer;
 }
-.menu-item:active {
+.menu-item:hover {
   background: var(--pressed);
   font-weight: bold;
 }
