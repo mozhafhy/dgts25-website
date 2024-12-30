@@ -42,7 +42,7 @@ body {
   --lh-4xl: 2.5rem;
 
   --txt-5xl: 3rem;
-  --lh-4xl: 3rem;
+  --lh-5xl: 3rem;
 
   /* ? Shadow */
   --def-shadow: 3px 4px 6px hsla(201, 100, 14, 0.4);
@@ -63,4 +63,14 @@ a {
 
 button {
   border: none;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  line-height: clamp(36px, 6vw, 48px);
+}
+
+:not(h1) {
+  font-size: clamp(12px, 2.5vw, 24px);
+  line-height: clamp(16px, 3vw, 32px);
 }

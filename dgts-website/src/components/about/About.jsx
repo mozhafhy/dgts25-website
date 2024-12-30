@@ -13,7 +13,7 @@ const images = [
   path + "09.png",
   path + "10.png",
   path + "11.png",
-  path + "12.png"
+  path + "12.png",
 ];
 
 export default function About() {
@@ -25,10 +25,12 @@ export default function About() {
             About DGTS 2025
           </h1>
           <p id="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Duacare Goes To School 2025 mengusung tema “Explore Your Path,
+            Ignite Your Future”, yang menggambarkan perjalanan penemuan jati
+            diri dan ambisi. Tema ini bertujuan untuk mendorong setiap individu
+            meraih peluang, membangun masa depan yang cerah, dan menginspirasi
+            tindakan serta tekad dalam mencapai tujuan dengan mengoptimalkan
+            potensi diri.
           </p>
         </div>
 
@@ -37,10 +39,11 @@ export default function About() {
             Why DGTS 2025?
           </h6>
           <p id="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Kegiatan ini ditujukan kepada seluruh siswa SMA Negeri 2 Lumajang
+            dengan kolaborasi bersama pihak manajemen sekolah dan dirancang
+            untuk memberikan wawasan serta motivasi kepada generasi muda agar
+            terus belajar, berkembang, dan mengambil langkah nyata dalam
+            membangun masa depan.
           </p>
         </div>
       </div>

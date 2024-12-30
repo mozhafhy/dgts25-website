@@ -1,8 +1,10 @@
 /* ! Overall Container */
 .profile-container {
+  --left-right: clamp(1.25rem, 3vw, 2.5rem);
+  --top-bottom: clamp(0.75rem, 2vw, 1.5rem);
   background-color: var(--def-black);
   margin: 2.25rem 1.25rem;
-  padding: 0.75rem 1.25rem;
+  padding: var(--top-bottom) var(--left-right);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -15,27 +17,34 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: clamp(1rem, 2vw, 2.5rem);
 }
 #title {
   color: var(--def-white);
   font-weight: bold;
 }
+.why {
+  font-size: clamp(1rem, 3.25vw, 1.5rem);
+  line-height: clamp(1.5rem, 4.25vw, 2rem);
+}
 
 /* ? Image carousel */
 .img-carousel {
+  --top: clamp(0.25rem, 1vw, 0.625rem);
+  --bottom: clamp(0.5rem, 1vw, 1.25rem);
   display: flex;
   white-space: nowrap;
   overflow: auto;
   gap: 1rem;
   scrollbar-width: none;
-  margin-bottom: 0.5rem;
+  margin: var(--top) 0 var(--bottom) 0;
   border-left: 5px solid var(--def-light);
   border-right: 5px solid var(--def-light);
 }
 #foto {
-  height: 10rem;
-  width: 10rem;
+  --size: clamp(10rem, 25vw, 15rem);
+  height: var(--size);
+  width: var(--size);
   object-fit: cover;
   border: 5px solid var(--def-light);
   
