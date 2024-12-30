@@ -1,5 +1,4 @@
 .panit-container {
-  padding: 0 1.25rem;
   margin: 2.25rem auto;
 }
 #panit-title {
@@ -40,15 +39,15 @@
 
 /* ? Anggota */
 .anggota-container {
-  padding: 0.75rem 0;
+  padding: 0.75rem 1.25rem;
   display: flex;
-  overflow: auto;
+  overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
   gap: 1.5rem;
 }
 
-@media screen and (min-width: 950px) {
+@media (min-width: 950px) {
   .anggota-container {
     justify-content: center;
   }

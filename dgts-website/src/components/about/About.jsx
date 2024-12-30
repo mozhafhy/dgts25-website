@@ -1,10 +1,20 @@
 import "./About.css";
 
-const dummy = (
-  <svg height="10rem" width="10rem">
-    <rect height="10rem" width="10rem" fill="#000" />
-  </svg>
-);
+const path = "src/assets/about-images/";
+const images = [
+  path + "01.png",
+  path + "02.png",
+  path + "03.png",
+  path + "04.png",
+  path + "05.png",
+  path + "06.png",
+  path + "07.png",
+  path + "08.png",
+  path + "09.png",
+  path + "10.png",
+  path + "11.png",
+  path + "12.png"
+];
 
 export default function About() {
   return (
@@ -15,8 +25,10 @@ export default function About() {
             About DGTS 2025
           </h1>
           <p id="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
         </div>
 
@@ -25,17 +37,17 @@ export default function About() {
             Why DGTS 2025?
           </h6>
           <p id="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
         </div>
       </div>
       <div className="img-carousel">
-        <div id="carousel-item">{dummy}</div>
-        <div id="carousel-item">{dummy}</div>
-        <div id="carousel-item">{dummy}</div>
-        <div id="carousel-item">{dummy}</div>
-        <div id="carousel-item">{dummy}</div>
+        {images.map((img, key) => (
+          <img key={key} id="foto" src={img} />
+        ))}
       </div>
     </div>
   );
