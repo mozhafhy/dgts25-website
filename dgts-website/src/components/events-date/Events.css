@@ -1,8 +1,8 @@
 .card-container .card-row .card {
   border: 2px solid var(--def-black);
   border-radius: 4px;
-  width: 20rem;
-  height: 28rem;
+  width: 16rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
