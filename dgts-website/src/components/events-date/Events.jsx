@@ -70,20 +70,23 @@ export default function Events() {
 // ! Card container
 function Card(props) {
   return (
-    <div className="cards-item">
-      <Front
-        event={props.event}
-        motto={props.motto}
-        foto={props.foto}
-        color={props.color}
-      />
-      <Back
-        event={props.event}
-        desc={props.desc}
-        color={props.color}
-        date={props.date}
-        place={props.place}
-      />
+    <div className="card-container">
+      <Front type="dummy" event="dummy" />
+      <div className="cards-item">
+        <Front
+          event={props.event}
+          motto={props.motto}
+          foto={props.foto}
+          color={props.color}
+        />
+        <Back
+          event={props.event}
+          desc={props.desc}
+          color={props.color}
+          date={props.date}
+          place={props.place}
+        />
+      </div>
     </div>
   );
 }
@@ -91,14 +94,12 @@ function Card(props) {
 // ! Front part
 function Front(props) {
   return (
-    <div id="front-part">
+    <div className={`front-part ${props.type}`}>
       <div className="item-container">
         <div className="card-title">
           <h6 className="event front">{props.event}</h6>
 
-          <div className={`${props.color}-decor front-card`}>
-            {decor}
-          </div>
+          <div className={`${props.color}-decor front-card`}>{decor}</div>
 
           <div id="motto">{`"${props.motto}"`}</div>
         </div>
@@ -135,16 +136,14 @@ function Back(props) {
   );
 
   return (
-    <div id="back-part">
+    <div className={`back-part ${props.type}`}>
       <div id="border-box">
         <div className={`${props.color}-head back`}>{props.event}</div>
 
         <div className="event info-container">
           <div className={`${props.color} even-desc`}>{props.desc}</div>
 
-          <div className={`${props.color}-decor decor`}>
-            {decor}
-          </div>
+          <div className={`${props.color}-decor decor`}>{decor}</div>
 
           <div id="date-place">
             <div className="date">

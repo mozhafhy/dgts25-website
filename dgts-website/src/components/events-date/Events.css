@@ -1,16 +1,32 @@
 /* ! Some variables */
 :root {
   /* --card-width: clamp(min-content, 60vw, max-content); */
-  --card-height: clamp(280, 75vw, 525px);
+  --card-height: clamp(450px, 75vw, 600px);
   --card-gap: clamp(24px, 3vw, 36px);
   --item-gap: clamp(24px, 5vw, 36px);
   --decor-width: clamp(200px, 40vw, 250px);
   --title-gap: clamp(6px, 2vw, 12px);
 }
 
-.cards-item {
+/* ! Card carousel styling */
+.cards-carousel {
+  /* border: 1px solid; */
+  height: calc(clamp(450px, 75vw, 600px) + 5px);
+  margin-top: 1.5rem;
+  padding: 0 0.15rem;
   display: flex;
-  
+  gap: var(--card-gap);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 1.35rem;
+
   & .red-ligth-decor > svg path {
     fill: var(--secondary);
   }
@@ -23,30 +39,37 @@
   & .blue-dark-decor > svg path {
     fill: var(--def-black);
   }
+  .dummy {
+    height: var(--card-height);
+    opacity: 0;
+    cursor: initial;
+  }
 }
 
-/* ! Card carousel styling */
-.cards-carousel {
-  border: 1px solid;
-  height: fit-content;
-  padding: 1.5rem 1.25rem;
-  display: flex;
-  gap: var(--card-gap);
-  /* white-space: nowrap; */
-  overflow-x: auto;
-  scrollbar-width: none;
+.cards-item {
+  position: absolute;
+  height: 100%;
+  width: 115%;
+  transform-style: preserve-3d;
+  transition: all 500ms ease;
+}
+.cards-item:hover {
+  transform: rotateY(180deg);
 }
 
 /* ! Front card stylings */
-#front-part {
+.front-part:not(.dummy) {
+  position: absolute;
   height: var(--card-height);
   border: 2px solid var(--def-black);
   background-color: var(--def-white);
   box-shadow: 3px 4px 6px rgba(0, 46, 71, 0.4);
   padding: 0 1.25rem;
   cursor: pointer;
+
+  backface-visibility: hidden;
 }
-#front-part .item-container{
+.front-part .item-container{
   /* border: 1px solid; */
   display: flex;
   flex-direction: column;
@@ -56,6 +79,7 @@
 
   & #info {
     color: var(--secondary);
+    margin-bottom: 1.25rem;
   }
 
   & img {
@@ -93,7 +117,8 @@
 }
 
 /* ! Back part stylings */
-#back-part {
+.back-part {
+  position: absolute;
   justify-items: center;
   height: var(--card-height);
   border: 2px solid var(--def-black);
@@ -101,6 +126,9 @@
   box-shadow: 3px 4px 6px rgba(0, 46, 71, 0.4);
   padding: 1.25rem;
   cursor: pointer;
+
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 #border-box {
@@ -138,7 +166,7 @@
   & .info-container {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: clamp(6px, 0.75vw, 10px);
     width: 100%;
     padding: 1.25rem;
 
@@ -147,8 +175,8 @@
     }
 
     & .even-desc {
-      font-size: clamp(16px, 2vw, 18px);
-      line-height: clamp(24px, 3vw, 28px);
+      font-size: clamp(14px, 2.25vw, 16px);
+      line-height: clamp(20px, 3vw, 24px);
     }
   }
 }
