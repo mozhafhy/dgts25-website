@@ -7,8 +7,6 @@ body {
 * {
   box-sizing: border-box;
   font-family: "Roboto";
-  font-size: var(--txt-xs);
-  line-height: var(--lh-xs);
   margin: 0;
 }
 
@@ -45,10 +43,10 @@ body {
   --lh-5xl: 3rem;
 
   /* ? Shadow */
-  --def-shadow: 3px 4px 6px hsla(201, 100, 14, 0.4);
+  --def-shadow: 3px 4px 6px rgba(0, 46, 71, 0.4);
 
   /* ? Navbar heigth */
-  --nav-heigth: 56px;
+  --nav-heigth: clamp(56px, 5vw, 80px);
 }
 
 ul {
@@ -68,9 +66,10 @@ button {
 h1 {
   font-size: clamp(28px, 5vw, 48px);
   line-height: clamp(36px, 6vw, 48px);
+  font-weight: bold;
 }
 
 :not(h1) {
-  font-size: clamp(12px, 2.5vw, 24px);
-  line-height: clamp(16px, 3vw, 32px);
+  font-size: clamp(12px, 2.5vw, 16px);
+  line-height: clamp(16px, 3vw, 24px);
 }
