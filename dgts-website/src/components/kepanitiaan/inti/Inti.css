@@ -1,5 +1,10 @@
 .panit-container {
+  /* border: 1px solid; */
   margin: 2.25rem auto;
+
+  & img {
+    box-shadow: var(--def-shadow);
+  }
 }
 #panit-title {
   font-weight: bold;
@@ -9,70 +14,92 @@
 
 /* ? Ketua */
 #ketua {
+  /* border: 1px solid; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 .foto-ketua {
-  height: 150px;
-  width: 150px;
+  --img-size: clamp(150px, 30vw, 180px);
+  height: var(--img-size);
+  width: var(--img-size);
   object-fit: cover;
   border-radius: 50%;
 }
 .info-ketua {
-  max-width: 180px;
-  margin: 28px 0 0 1rem;
+  /* --marg-left: clamp(28px, 5.5vw, 45px); */
+  --marg-up: clamp(12px, 3.5vw, 19px);
+  /* max-width: 180px; */
+  /* border: 1px solid; */
+  margin: var(--marg-up) 0 0 0;
+  text-align: center;
 }
 .info-ketua > p {
   margin: 0;
 }
-.nama-ketua {
-  font-size: var(--txt-2xl);
-  line-height: var(--lh-2xl);
+#nama-ketua {
+  font-size: var(--txt-3xl);
+  line-height: var(--lh-3xl);
   font-weight: bold;
 }
 .posisi-ketua {
   color: var(--secondary);
-  font-size: var(--txt-base);
-  line-height: var(--lh-base);
+  font-size: var(--txt-2xl);
+  line-height: var(--lh-2xl);
 }
 
 /* ? Anggota */
 .anggota-container {
-  padding: 0.75rem 1.25rem;
+  --item-gap: clamp(2.5rem, 6vw, 3rem);
+
+  padding: 0 1.25rem;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  
   display: flex;
   overflow-x: auto;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   scrollbar-width: none;
-  gap: 1.5rem;
+  gap: var(--item-gap);
 }
-
-@media (min-width: 950px) {
+/* 
+@media (min-width: 1180px) {
   .anggota-container {
-    justify-content: center;
   }
-}
+} */
 
 #anggota {
   display: flex;
 }
 .foto-anggota {
-  height: 75px;
-  width: 75px;
+  --img-size: clamp(75px, 15vw, 120px);
+
+  height: var(--img-size);
+  width: var(--img-size);
+
   object-fit: cover;
   border-radius: 50%;
 }
 .info-anggota {
-  margin: 0 0 0 0.75rem;
+  --marg-left: clamp(0.75rem, 2vw, 1.25rem);
+
+  margin: 0 0 0 var(--marg-left);
   align-content: center;
 }
 .info-anggota > p {
   margin: 0;
 }
-.nama-anggota {
-  width: 118px;
-  font-size: var(--txt-base);
-  line-height: var(--lh-base);
+#nama-anggota {
+  --font-sz: clamp(var(--txt-base), 3vw, var(--txt-2xl));
+  --line-hg: clamp(var(--lh-base), 4vw, var(--lh-2xl));
+
+  width: max-content;
+
+  font-size: var(--font-sz);
+  line-height: var(--line-hg);
   font-weight: bold;
-  white-space: wrap;
+}
+.posisi-anggota {
+  color: var(--secondary);
 }

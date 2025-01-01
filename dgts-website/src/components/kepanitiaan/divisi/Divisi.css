@@ -1,31 +1,40 @@
+/* ! Main container */
 .divisi-container {
+  --gap-row: clamp(1rem, 2.5vw, 2rem);
+  --gap-col: clamp(5rem, 12.5vw, 10rem);
+
   width: fit-content;
-  padding: 0 1.25rem;
   display: grid;
   margin: 0 auto;
-  gap: 1rem 5rem;
+  gap: var(--gap-row) var(--gap-col);
 }
-
 @media screen and (min-width: 800px) {
   .divisi-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* ! Divisi container */
 #divisi {
+  --item-gap: clamp(0.75rem, 1.25vw, 1.5rem);
+
+  /* ! Activate this to show the bounding box */
   /* border: 1px solid; */
   display: flex;
-  gap: 0.75rem;
+  gap: var(--item-gap);
   justify-content: center;
 }
-
 #foto-co {
-  width: 120px;
-  height: 120px;
+  --size: clamp(120px, 22.5vw, 180px);
+  
+  width: var(--size);
+  height: var(--size);
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: var(--def-shadow);
 }
 
+/* ! Info container > nama, desc, foto anggota */
 #info {
   display: flex;
   flex-direction: column;
@@ -37,8 +46,11 @@
 }
 
 .nama-divisi {
-  font-size: var(--txt-base);
-  line-height: var(--lh-base);
+  --font-sz: clamp(var(--txt-2xl), 4vw, var(--txt-3xl));
+  --line-hg: clamp(var(--lh-2xl), 5vw, var(--lh-3xl));
+  
+  font-size: var(--font-sz);
+  line-height: var(--line-hg);
   font-weight: bold;
 }
 .deskripsi-divisi {
@@ -46,9 +58,33 @@
 }
 
 .pp-anggota {
-  height: 40px;
-  width: 240px;
-  background-color: var(--def-black);
-  color: #fff;
-  text-align: center;
+  --size: clamp(2.5rem, 6vw, 3rem);
+  --img-gap: ;
+
+  display: flex;
+
+  & #pp {
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  & #pp:not(:first-child) {
+    margin-left: -1rem;
+  }
+  
+  & #remain {
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--def-black);
+    color: var(--def-white);
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--def-light) inset;
+    margin-left: -1rem;
+  }
 }

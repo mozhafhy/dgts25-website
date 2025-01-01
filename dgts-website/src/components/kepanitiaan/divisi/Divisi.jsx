@@ -1,6 +1,15 @@
 import "./Divisi.css";
 import dummy from "../../../assets/talkshow.jpg";
 
+const images = [ // ! Ini gambar tes
+  "src/assets/bedah_jurusan.JPG",
+  "src/assets/campex.JPG",
+  "src/assets/roadshow.JPG",
+  "src/assets/roadshow.JPG",
+  "src/assets/roadshow.JPG",
+  "src/assets/talkshow.JPG",
+];
+
 export default function Divisi() {
   return (
     <div className="divisi-container">
@@ -9,53 +18,52 @@ export default function Divisi() {
         fotoCO={dummy}
         divisi="Divisi 1"
         deskripsi="Some descriptions here"
-        // TODO: foto anggota
+        foto={images}
       />
-
       <Sie
         isOddChild={true}
         fotoCO={dummy}
-        divisi="Divisi 2"
+        divisi="Divisi 1"
         deskripsi="Some descriptions here"
-        // TODO: foto anggota
+        foto={images}
       />
-
       <Sie
         isOddChild={false}
         fotoCO={dummy}
-        divisi="Divisi 3"
+        divisi="Divisi 1"
         deskripsi="Some descriptions here"
-        // TODO: foto anggota
+        foto={images}
       />
-
       <Sie
         isOddChild={true}
         fotoCO={dummy}
-        divisi="Divisi 4"
+        divisi="Divisi 1"
         deskripsi="Some descriptions here"
-        // TODO: foto anggota
+        foto={images}
       />
-
       <Sie
         isOddChild={false}
         fotoCO={dummy}
-        divisi="Divisi 5"
+        divisi="Divisi 1"
         deskripsi="Some descriptions here"
-        // TODO: foto anggota
+        foto={images}
       />
-
       <Sie
         isOddChild={true}
         fotoCO={dummy}
-        divisi="Divisi 6"
+        divisi="Divisi 1"
         deskripsi="Some descriptions here"
-        // TODO: foto anggota
+        foto={images}
       />
     </div>
   );
 }
 
 function Sie(props) {
+  const fotos = props.foto;
+  const length = fotos.length;
+  const remain = length - 4;
+
   return props.isOddChild ? (
     <div id="divisi">
       <div id="info">
@@ -63,7 +71,13 @@ function Sie(props) {
           <p className="nama-divisi">{props.divisi}</p>
           <p className="deskripsi-divisi">{props.deskripsi}</p>
         </div>
-        <div className="pp-anggota">Images{/*TODO: add images*/}Here</div>
+        <div className="pp-anggota">
+          {fotos.slice(0, 4).map((foto, key) => (
+            <img id="pp" src={foto} key={key} alt={`Staff-${key}`} />
+          ))}
+
+          {remain !== 0 ? <div id="remain">+{remain}</div> : ""}
+        </div>
       </div>
       <img id="foto-co" src={props.fotoCO} />
     </div>
@@ -75,7 +89,13 @@ function Sie(props) {
           <p className="nama-divisi">{props.divisi}</p>
           <p className="deskripsi-divisi">{props.deskripsi}</p>
         </div>
-        <div className="pp-anggota">Images{/*TODO: add images*/}Here</div>
+        <div className="pp-anggota">
+          {fotos.slice(0, 4).map((foto, key) => (
+            <img id="pp" src={foto} key={key} alt={`Staff-${key}`} />
+          ))}
+
+          {remain !== 0 ? <div id="remain">+{remain}</div> : ""}
+        </div>
       </div>
     </div>
   );
