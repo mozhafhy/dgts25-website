@@ -76,7 +76,7 @@ function Sie(props) {
             <img id="pp" src={foto} key={key} alt={`Staff-${key}`} />
           ))}
 
-          {remain !== 0 ? <div id="remain">+{remain}</div> : ""}
+          {remain > 0 ? <div id="remain">+{remain}</div> : ""}
         </div>
       </div>
       <img id="foto-co" src={props.fotoCO} />
@@ -94,7 +94,7 @@ function Sie(props) {
             <img id="pp" src={foto} key={key} alt={`Staff-${key}`} />
           ))}
 
-          {remain !== 0 ? <div id="remain">+{remain}</div> : ""}
+          {remain > 0 ? <div id="remain">+{remain}</div> : ""}
         </div>
       </div>
     </div>
