@@ -70,8 +70,9 @@ export default function Events() {
 // ! Card container
 function Card(props) {
   return (
-    <div className="card-container">
+    <label className="card-container">
       <Front type="dummy" event="dummy" />
+      <input type="checkbox"/>
       <div className="cards-item">
         <Front
           event={props.event}
@@ -87,7 +88,7 @@ function Card(props) {
           place={props.place}
         />
       </div>
-    </div>
+    </label>
   );
 }
 

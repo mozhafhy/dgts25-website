@@ -1,7 +1,7 @@
 /* ! Some variables */
 :root {
   /* --card-width: clamp(min-content, 60vw, max-content); */
-  --card-height: clamp(450px, 75vw, 600px);
+  --card-height: clamp(450px, 85vw, 550px);
   --card-gap: clamp(24px, 3vw, 36px);
   --item-gap: clamp(24px, 5vw, 36px);
   --decor-width: clamp(200px, 40vw, 250px);
@@ -11,21 +11,22 @@
 /* ! Card carousel styling */
 .cards-carousel {
   /* border: 1px solid; */
-  height: calc(clamp(450px, 75vw, 600px) + 5px);
+  height: fit-content;
   margin-top: 1.5rem;
-  padding: 0 0.15rem;
+  padding: 12px 1.25rem;
   display: flex;
   gap: var(--card-gap);
   overflow-x: auto;
   scrollbar-width: none;
 }
-
+/* ! The card and its flip animation */
 .card-container {
   position: relative;
   display: flex;
   height: fit-content;
   width: fit-content;
-  margin: 0 1.35rem;
+  
+  cursor: pointer;
 
   & .red-ligth-decor > svg path {
     fill: var(--secondary);
@@ -42,19 +43,24 @@
   .dummy {
     height: var(--card-height);
     opacity: 0;
+    border: 2px solid;
     cursor: initial;
+    padding: 1.25rem;
   }
-}
-
-.cards-item {
-  position: absolute;
-  height: 100%;
-  width: 115%;
-  transform-style: preserve-3d;
-  transition: all 500ms ease;
-}
-.cards-item:hover {
-  transform: rotateY(180deg);
+  .cards-item {
+    /* opacity: 0; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+  }
+  input {
+    display: none;
+  }
+  & :checked + .cards-item {
+    transform: rotateY(180deg);
+  }
 }
 
 /* ! Front card stylings */
@@ -65,7 +71,6 @@
   background-color: var(--def-white);
   box-shadow: 3px 4px 6px rgba(0, 46, 71, 0.4);
   padding: 0 1.25rem;
-  cursor: pointer;
 
   backface-visibility: hidden;
 }
@@ -125,7 +130,6 @@
   background-color: var(--def-white);
   box-shadow: 3px 4px 6px rgba(0, 46, 71, 0.4);
   padding: 1.25rem;
-  cursor: pointer;
 
   backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -166,17 +170,17 @@
   & .info-container {
     display: flex;
     flex-direction: column;
-    gap: clamp(6px, 0.75vw, 10px);
+    gap: clamp(12px, 5vw, 24px);
     width: 100%;
     padding: 1.25rem;
 
     & .decor > svg {
-      width: max(var(--decor-width), 100%);
+      width: 100%;
     }
 
     & .even-desc {
-      font-size: clamp(14px, 2.25vw, 16px);
-      line-height: clamp(20px, 3vw, 24px);
+      font-size: clamp(14px, 3vw, 16px);
+      line-height: clamp(20px, 4vw, 24px);
     }
   }
 }
