@@ -1,10 +1,12 @@
 /* ! Overall Container */
 .profile-container {
-  --left-right: clamp(1.25rem, 3vw, 2.5rem);
-  --top-bottom: clamp(0.75rem, 2vw, 1.5rem);
+  --pad-left-right: clamp(1.25rem, 3vw, 2.5rem);
+  --pad-top-bottom: clamp(0.75rem, 2vw, 1.5rem);
+  --gap: clamp(1rem, 3vw, 2rem);
+
   background-color: var(--def-black);
   margin: 2.25rem 1.25rem;
-  padding: var(--top-bottom) var(--left-right);
+  padding: var(--pad-top-bottom) var(--pad-left-right);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -24,29 +26,40 @@
   font-weight: bold;
 }
 .why {
-  font-size: clamp(1rem, 3.25vw, 1.5rem);
-  line-height: clamp(1.5rem, 4.25vw, 2rem);
+  font-size: clamp(1rem, 3.25vw, 2rem);
+  line-height: clamp(1.5rem, 4.25vw, 2.25rem);
+}
+
+#desc {
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
+  line-height: clamp(1rem, 3vw, 2rem);
 }
 
 /* ? Image carousel */
 .img-carousel {
   --top: clamp(0.25rem, 1vw, 0.625rem);
   --bottom: clamp(0.5rem, 1vw, 1.25rem);
+  --border: clamp(5px, 1vw, 10px);
+  --item-gap: clamp(1rem, 3vw, 2rem);
+  
   display: flex;
+  gap: var(--item-gap);
+
   white-space: nowrap;
   overflow: auto;
-  gap: 1rem;
   scrollbar-width: none;
+
   margin: var(--top) 0 var(--bottom) 0;
-  border-left: 5px solid var(--def-light);
-  border-right: 5px solid var(--def-light);
+  border-left: var(--border) solid var(--def-light);
+  border-right: var(--border) solid var(--def-light);
 }
 #foto {
   --size: clamp(10rem, 25vw, 15rem);
+
   height: var(--size);
   width: var(--size);
   object-fit: cover;
-  border: 5px solid var(--def-light);
+  border: var(--border) solid var(--def-light);
   
   &:first-child {
     border-left: none;

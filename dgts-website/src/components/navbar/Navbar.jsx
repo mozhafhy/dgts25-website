@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import "./Navbar.css";
 import PropTypes from "prop-types";
-import Logo from "../../assets/typography.svg";
+import sponsor from "../../assets/typography.svg";
+import dgts from "../../assets/logo.svg";
 import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
@@ -34,7 +36,10 @@ export default function Navbar() {
 function Nav(props) {
   return (
     <nav className="navbar-container">
-      <img className="logo" src={Logo} />
+      <div id="logos">
+        <img className="logo dgts" src={dgts} />
+        <img className="logo sponsor" src={sponsor} />
+      </div>
       <ul className="opsi-container">{props.children}</ul>
     </nav>
   );

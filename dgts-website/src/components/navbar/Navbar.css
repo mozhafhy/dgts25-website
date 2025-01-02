@@ -14,8 +14,16 @@
 }
 
 /* ! Logo DGTS */
+#logos {
+  --logo-gap: clamp(6px, 1vw, 12px);
+
+  display: flex;
+  gap: var(--logo-gap);
+  align-items: center;
+}
 .logo {
-  height: 2rem;
+  --size: clamp(1.5rem, 5vw, 2rem);
+  height: var(--size);
 }
 
 /* ! Style opsi utama (presensi, tiket, etc.) */
@@ -43,8 +51,8 @@
   margin-right: 0.5rem;
   
   & > svg {
-    margin-left: 6px;
-    margin-bottom: 6px;
+    margin-left: 5px;
+    margin-bottom: 0px;
   }
 
   & > svg path {
@@ -64,8 +72,8 @@
   }
 
   & > svg {
-    margin-left: 6px;
-    margin-bottom: 6px;
+    margin-left: 5px;
+    margin-bottom: 0px;
   }
   
   & > svg path {
@@ -86,13 +94,21 @@
   }
 
   & > svg {
-    margin-left: 6px;
-    margin-bottom: 6px;
+    margin-left: 5px;
+    margin-bottom: 0px;
   }
   
   & > svg path {
     fill: var(--def-black);
   }
+}
+
+.h6 {
+  --font-sz: clamp(12px, 1.5vw, 16px);
+  --line-hg: clamp(16px, 3vw, 24px);
+
+  font-size: var(--font-sz);
+  line-height: var(--line-hg);
 }
 
 /* ! Style utama dropdown --> function DropdownMenu */

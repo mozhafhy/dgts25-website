@@ -5,4 +5,18 @@
 .btn-underline {
   text-decoration: underline;
   color: var(--def-black);
+  text-align: center;
+
+  & svg {
+    --size: clamp(24px, 4vw, 32px);
+    --margin: clamp(5px, 1vw, 7.5px);
+
+    width: var(--size);
+    height: var(--size);
+    margin-left: var(--margin);
+
+    & path {
+      fill: var(--def-black);
+    }
+  }
 }

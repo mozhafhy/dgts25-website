@@ -43,7 +43,13 @@ body {
   --lh-5xl: 3rem;
 
   /* ? Shadow */
-  --def-shadow: 3px 4px 6px rgba(0, 46, 71, 0.4);
+  --shadow-x: clamp(3px, 1vw, 6px);
+  --shadow-y: clamp(4px, 1vw, 8px);
+  --shadow-blur: clamp(6px, 1.25vw, 12px);
+
+  --shadow-pos: var(--shadow-x) var(--shadow-y) var(--shadow-blur);
+
+  --def-shadow: var(--shadow-pos) rgba(0, 46, 71, 0.4);
 
   /* ? Navbar heigth */
   --nav-heigth: clamp(56px, 5vw, 72px);
