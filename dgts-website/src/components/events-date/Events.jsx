@@ -1,4 +1,6 @@
+/* eslint-disable react/prop-types */
 import "./Events.css";
+import events from "./EventsData.json";
 
 // ! Decoration element -> line
 const decor = (
@@ -23,45 +25,18 @@ export default function Events() {
       <h1 className="text-center">Events and Date</h1>
 
       <div className="cards-carousel">
-        <Card
-          event="Roadshow"
-          motto="Explore Your Path, Ignite Your Future"
-          foto="src\assets\roadshow.JPG"
-          color="red-ligth"
-          desc="Roadshow to Duacare Goes To School 2025 merupakan permulaan dari serangkaian kegiatan Duacare Goes To School 2025 yang bertujuan untuk memberikan pengenalan serta pemahaman mengenai Duacare dan DGTS itu sendiri."
-          date="17 Januari 2025 (09.30 - 14.15 WIB)"
-          place="Ruang kelas SMA Negeri 2 Lumajang"
-        />
-
-        <Card
-          event="Bedah Jurusan"
-          motto="Know Your dreams, Shape Your Mission, and Decide Your Major"
-          foto="src\assets\bedah_jurusan.JPG"
-          color="red-dark"
-          desc="Bedah Jurusan merupakan rangkaian acara Duacare Goes To School 2025 yang bertujuan untuk membantu siswa-siswi kelas XII SMA Negeri 2 Lumajang memahami berbagai jurusan di perguruan tinggi."
-          date="25 Januari 2025 (06.45 - 12.00 WIB)"
-          place="Ruang kelas SMA Negeri 2 Lumajang"
-        />
-
-        <Card
-          event="Talkshow"
-          motto="Dare to Dream, Dare to Achieve"
-          foto="src\assets\talkshow.JPG"
-          color="blue-ligth"
-          desc="Talkshow merupakan kegiatan yang diadakan dalam rangkaian kegiatan DGTS 2025 berupa perbincangan atau diskusi bersama pemateri (alumni SMADA) yang diundang mengenai topik tertentu."
-          date="24 Januari 2025 (12.45 - 16.15 WIB)"
-          place="Pinandhita Hall SMA Negeri 2 Lumajang"
-        />
-
-        <Card
-          event="Campus Expo"
-          motto="Explore Possibilities, Embrace Opportunities"
-          foto="src\assets\campex.JPG"
-          color="blue-dark"
-          desc="Campus Expo merupakan rangkaian acara Duacare Goes To School 2025 yang bertujuan untuk memberikan informasi mengenai berbagai perguruan tinggi yang ada di Indonesia kepada siswa-siswi SMA Negeri 2 Lumajang."
-          date="25 - 26 Januari 2025 (12.00 - 21.00 WIB)"
-          place="Ruang kelas SMA Negeri 2 Lumajang"
-        />
+        {events.map((acara) => (
+          <Card
+            key={acara.key}
+            event={acara.event}
+            motto={acara.motto}
+            foto={acara.foto}
+            color={acara.color}
+            desc={acara.desc}
+            date={acara.date}
+            place={acara.place}
+          />
+        ))}
       </div>
     </div>
   );
@@ -70,9 +45,9 @@ export default function Events() {
 // ! Card container
 function Card(props) {
   return (
-    <label className="card-container">
+    <label className="card-container" key={props.key}>
       <Front type="dummy" event="dummy" />
-      <input type="checkbox"/>
+      <input type="checkbox" />
       <div className="cards-item">
         <Front
           event={props.event}
@@ -149,7 +124,9 @@ function Back(props) {
           <div id="date-place">
             <div className="date">
               {dateIcon}
-              {props.date}
+              {props.date[0]}
+              <br />
+              {props.date[1]}
             </div>
             <div className="place">
               {placeIcon}

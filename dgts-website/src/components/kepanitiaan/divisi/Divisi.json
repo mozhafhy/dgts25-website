@@ -4,7 +4,7 @@
     "isOddChild": false,
     "fotoCO": "src/components/kepanitiaan/divisi/img/1Humas/0.jpg",
     "divisi": "Humas",
-    "deskripsi": "Something here",
+    "deskripsi": "Hubungan masyarakat",
     "foto": [
       "src/components/kepanitiaan/divisi/img/1Humas/1.jpg",
       "src/components/kepanitiaan/divisi/img/1Humas/2.jpg",
@@ -18,10 +18,9 @@
     "isOddChild": true,
     "fotoCO": "src/components/kepanitiaan/divisi/img/2Pendanaan/0.jpg",
     "divisi": "Pendanaan",
-    "deskripsi": "Something here",
+    "deskripsi": "Kerja! Kerja! Kerja!",
     "foto": [
       "src/components/kepanitiaan/divisi/img/2Pendanaan/1.jpg",
-      "src/components/kepanitiaan/divisi/img/2Pendanaan/10.jpg",
       "src/components/kepanitiaan/divisi/img/2Pendanaan/2.jpg",
       "src/components/kepanitiaan/divisi/img/2Pendanaan/3.jpg",
       "src/components/kepanitiaan/divisi/img/2Pendanaan/4.jpg",
@@ -29,7 +28,8 @@
       "src/components/kepanitiaan/divisi/img/2Pendanaan/6.jpg",
       "src/components/kepanitiaan/divisi/img/2Pendanaan/7.jpg",
       "src/components/kepanitiaan/divisi/img/2Pendanaan/8.jpg",
-      "src/components/kepanitiaan/divisi/img/2Pendanaan/9.jpg"
+      "src/components/kepanitiaan/divisi/img/2Pendanaan/9.jpg",
+      "src/components/kepanitiaan/divisi/img/2Pendanaan/10.jpg"
     ]
   },
   {
@@ -37,7 +37,7 @@
     "isOddChild": false,
     "fotoCO": "src/components/kepanitiaan/divisi/img/3Kreatif/0.jpg",
     "divisi": "Kreatif",
-    "deskripsi": "Something here",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
     "foto": [
       "src/components/kepanitiaan/divisi/img/3Kreatif/1.jpg",
       "src/components/kepanitiaan/divisi/img/3Kreatif/2.jpg",
@@ -55,7 +55,7 @@
     "isOddChild": true,
     "fotoCO": "src/components/kepanitiaan/divisi/img/4Konsumsi/0.jpg",
     "divisi": "Konsumsi",
-    "deskripsi": "Something here",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
     "foto": [
       "src/components/kepanitiaan/divisi/img/4Konsumsi/1.jpg",
       "src/components/kepanitiaan/divisi/img/4Konsumsi/2.jpg",
@@ -71,15 +71,9 @@
     "isOddChild": false,
     "fotoCO": "src/components/kepanitiaan/divisi/img/5Perkap/0.jpg",
     "divisi": "Perkap",
-    "deskripsi": "Something here",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
     "foto": [
       "src/components/kepanitiaan/divisi/img/5Perkap/1.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/10.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/11.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/12.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/13.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/14.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/15.jpg",
       "src/components/kepanitiaan/divisi/img/5Perkap/2.jpg",
       "src/components/kepanitiaan/divisi/img/5Perkap/3.jpg",
       "src/components/kepanitiaan/divisi/img/5Perkap/4.jpg",
@@ -87,7 +81,13 @@
       "src/components/kepanitiaan/divisi/img/5Perkap/6.jpg",
       "src/components/kepanitiaan/divisi/img/5Perkap/7.jpg",
       "src/components/kepanitiaan/divisi/img/5Perkap/8.jpg",
-      "src/components/kepanitiaan/divisi/img/5Perkap/9.jpg"
+      "src/components/kepanitiaan/divisi/img/5Perkap/9.jpg",
+      "src/components/kepanitiaan/divisi/img/5Perkap/10.jpg",
+      "src/components/kepanitiaan/divisi/img/5Perkap/11.jpg",
+      "src/components/kepanitiaan/divisi/img/5Perkap/12.jpg",
+      "src/components/kepanitiaan/divisi/img/5Perkap/13.jpg",
+      "src/components/kepanitiaan/divisi/img/5Perkap/14.jpg",
+      "src/components/kepanitiaan/divisi/img/5Perkap/15.jpg"
     ]
   },
   {
@@ -95,7 +95,7 @@
     "isOddChild": true,
     "fotoCO": "src/components/kepanitiaan/divisi/img/6Bedah Jurusan/0.jpg",
     "divisi": "Bedah Jurusan",
-    "deskripsi": "Something here",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
     "foto": [
       "src/components/kepanitiaan/divisi/img/6Bedah Jurusan/1.jpg",
       "src/components/kepanitiaan/divisi/img/6Bedah Jurusan/2.jpg",
@@ -113,11 +113,9 @@
     "isOddChild": false,
     "fotoCO": "src/components/kepanitiaan/divisi/img/7Talkshow/0.jpg",
     "divisi": "Talkshow",
-    "deskripsi": "Something here",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
     "foto": [
       "src/components/kepanitiaan/divisi/img/7Talkshow/1.jpg",
-      "src/components/kepanitiaan/divisi/img/7Talkshow/10.jpg",
-      "src/components/kepanitiaan/divisi/img/7Talkshow/11.jpg",
       "src/components/kepanitiaan/divisi/img/7Talkshow/2.jpg",
       "src/components/kepanitiaan/divisi/img/7Talkshow/3.jpg",
       "src/components/kepanitiaan/divisi/img/7Talkshow/4.jpg",
@@ -125,7 +123,9 @@
       "src/components/kepanitiaan/divisi/img/7Talkshow/6.jpg",
       "src/components/kepanitiaan/divisi/img/7Talkshow/7.jpg",
       "src/components/kepanitiaan/divisi/img/7Talkshow/8.jpg",
-      "src/components/kepanitiaan/divisi/img/7Talkshow/9.jpg"
+      "src/components/kepanitiaan/divisi/img/7Talkshow/9.jpg",
+      "src/components/kepanitiaan/divisi/img/7Talkshow/10.jpg",
+      "src/components/kepanitiaan/divisi/img/7Talkshow/11.jpg"
     ]
   },
   {
@@ -133,12 +133,9 @@
     "isOddChild": true,
     "fotoCO": "src/components/kepanitiaan/divisi/img/8Campus Expo/0.jpg",
     "divisi": "Campus Expo",
-    "deskripsi": "Something here",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
     "foto": [
       "src/components/kepanitiaan/divisi/img/8Campus Expo/1.jpg",
-      "src/components/kepanitiaan/divisi/img/8Campus Expo/10.jpg",
-      "src/components/kepanitiaan/divisi/img/8Campus Expo/11.jpg",
-      "src/components/kepanitiaan/divisi/img/8Campus Expo/12.jpg",
       "src/components/kepanitiaan/divisi/img/8Campus Expo/2.jpg",
       "src/components/kepanitiaan/divisi/img/8Campus Expo/3.jpg",
       "src/components/kepanitiaan/divisi/img/8Campus Expo/4.jpg",
@@ -146,7 +143,10 @@
       "src/components/kepanitiaan/divisi/img/8Campus Expo/6.jpg",
       "src/components/kepanitiaan/divisi/img/8Campus Expo/7.jpg",
       "src/components/kepanitiaan/divisi/img/8Campus Expo/8.jpg",
-      "src/components/kepanitiaan/divisi/img/8Campus Expo/9.jpg"
+      "src/components/kepanitiaan/divisi/img/8Campus Expo/9.jpg",
+      "src/components/kepanitiaan/divisi/img/8Campus Expo/10.jpg",
+      "src/components/kepanitiaan/divisi/img/8Campus Expo/11.jpg",
+      "src/components/kepanitiaan/divisi/img/8Campus Expo/12.jpg"
     ]
   }
 ]

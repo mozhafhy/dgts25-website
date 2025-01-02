@@ -1,14 +1,16 @@
 /* ! Main container */
 .divisi-container {
-  --gap-row: clamp(1rem, 2.5vw, 2rem);
+  --gap-row: clamp(1.25rem, 2.5vw, 2.5rem);
   --gap-col: clamp(5rem, 12.5vw, 10rem);
 
+  /* border: 1px solid; */
   width: fit-content;
   display: grid;
   margin: 0 auto;
+  padding: 0 1.25rem;
   gap: var(--gap-row) var(--gap-col);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1440px) {
   .divisi-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -16,7 +18,7 @@
 
 /* ! Divisi container */
 #divisi {
-  --item-gap: clamp(0.75rem, 1.25vw, 1.5rem);
+  --item-gap: clamp(1rem, 2.5vw, 2rem);
 
   /* ! Activate this to show the bounding box */
   /* border: 1px solid; */
@@ -58,8 +60,9 @@
 }
 
 .pp-anggota {
-  --size: clamp(2.5rem, 6vw, 3rem);
-  --img-gap: ;
+  --size: clamp(3rem, 8.5vw, 4.5rem);
+  --overlap: clamp(-0.75rem, -1vw, -1.5rem);
+  --remain-border: clamp(3px, 0.5vw, 6px);
 
   display: flex;
 
@@ -73,7 +76,8 @@
   }
 
   & #pp:not(:first-child) {
-    margin-left: -1rem;
+
+    margin-left: var(--overlap);
   }
   
   & #remain {
@@ -81,10 +85,12 @@
     width: var(--size);
     background-color: var(--def-black);
     color: var(--def-white);
+
     text-align: center;
     align-content: center;
+
     border-radius: 50%;
-    box-shadow: 0 0 0 2px var(--def-light) inset;
-    margin-left: -1rem;
+    box-shadow: 0 0 0 var(--remain-border) var(--def-light) inset;
+    margin-left: var(--overlap);
   }
 }
