@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container position-relative text-center">
-        <div className="row h-100 flex-column-reverse flex-lg-row ">
+        <div className="row h-100 flex-column-reverse flex-lg-row jusntify-content-center align-items-center">
           <div className="col  align-items-center">
             <div className="row h-100 align-items-center">
               <div className="containercol ">
@@ -23,12 +23,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="col-6 ">
-            <div className="row h-100 align-items-center">
-              <p className="h5">Contact Person</p>
-              <p> 08123456890 (Contact 1)</p>
-              <p> 08123456890 (Contact 2)</p>
-            </div>
+          <div className="col-6 d-flex justify-content-center align-items-center flex-column contactcol">
+            <h2 className="contact">Contact Person</h2>
+            <a href="">
+              <p className="contacttext"> +62 822-4743-3645 (Riki Nanda)</p>
+            </a>
+            <a href="">
+              <p className="contacttext"> +62 822-3100-0810 (Mandaluna)</p>
+            </a>
           </div>
 
           <div className="col  ">
@@ -40,6 +42,11 @@ export default function Footer() {
         </div>
       </div>
       <img src={intersect} alt="" className="intersect position-absolute" />
+      <div className="footerbottom">
+        <p>
+          Copyright &copy;2025; Designed by <span> DGTS IT Team</span>{" "}
+        </p>
+      </div>
     </footer>
   );
 }
