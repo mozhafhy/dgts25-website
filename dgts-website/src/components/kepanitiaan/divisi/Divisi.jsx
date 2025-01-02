@@ -1,60 +1,19 @@
 import "./Divisi.css";
-import dummy from "../../../assets/talkshow.jpg";
-
-const images = [ // ! Ini gambar tes
-  "src/assets/bedah_jurusan.JPG",
-  "src/assets/campex.JPG",
-  "src/assets/roadshow.JPG",
-  "src/assets/roadshow.JPG",
-  "src/assets/roadshow.JPG",
-  "src/assets/talkshow.JPG",
-];
+import dataDivisi from "./Divisi.json";
 
 export default function Divisi() {
   return (
     <div className="divisi-container">
-      <Sie
-        isOddChild={false}
-        fotoCO={dummy}
-        divisi="Divisi 1"
-        deskripsi="Some descriptions here"
-        foto={images}
-      />
-      <Sie
-        isOddChild={true}
-        fotoCO={dummy}
-        divisi="Divisi 1"
-        deskripsi="Some descriptions here"
-        foto={images}
-      />
-      <Sie
-        isOddChild={false}
-        fotoCO={dummy}
-        divisi="Divisi 1"
-        deskripsi="Some descriptions here"
-        foto={images}
-      />
-      <Sie
-        isOddChild={true}
-        fotoCO={dummy}
-        divisi="Divisi 1"
-        deskripsi="Some descriptions here"
-        foto={images}
-      />
-      <Sie
-        isOddChild={false}
-        fotoCO={dummy}
-        divisi="Divisi 1"
-        deskripsi="Some descriptions here"
-        foto={images}
-      />
-      <Sie
-        isOddChild={true}
-        fotoCO={dummy}
-        divisi="Divisi 1"
-        deskripsi="Some descriptions here"
-        foto={images}
-      />
+      {dataDivisi.map((divisi) => (
+        <Sie
+          key={divisi.key}
+          isOddChild={divisi.isOddChild}
+          divisi={divisi.divisi}
+          fotoCO={divisi.fotoCO}
+          deskripsi={divisi.deskripsi}
+          foto={divisi.foto}
+        />
+      ))}
     </div>
   );
 }
@@ -65,7 +24,7 @@ function Sie(props) {
   const remain = length - 4;
 
   return props.isOddChild ? (
-    <div id="divisi">
+    <div key={props.key} id="divisi">
       <div id="info">
         <div>
           <p className="nama-divisi">{props.divisi}</p>
@@ -82,7 +41,7 @@ function Sie(props) {
       <img id="foto-co" src={props.fotoCO} />
     </div>
   ) : (
-    <div id="divisi">
+    <div key={props.key} id="divisi">
       <img id="foto-co" src={props.fotoCO} />
       <div id="info">
         <div>
