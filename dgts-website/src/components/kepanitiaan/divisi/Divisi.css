@@ -10,7 +10,7 @@
   padding: 0 1.25rem;
   gap: var(--gap-row) var(--gap-col);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .divisi-container {
     grid-template-columns: repeat(2, 1fr);
   }
