@@ -1,16 +1,18 @@
 import "./App.css";
-import Navbar from "./components/navbar/Navbar.jsx";
-import Hero from "./components/hero/Hero.jsx";
-import Sponsor from "./components/sponsor/Sponsor.jsx";
-import About from "./components/about/About.jsx";
-import Events from "./components/events-date/Events.jsx";
-import Inti from "./components/kepanitiaan/inti/Inti.jsx";
-import Divisi from "./components/kepanitiaan/divisi/Divisi.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import ContactButton from "./components/contact/contact.jsx";
+import Navbar from "./components/1navbar/Navbar.jsx";
+import Hero from "./components/2hero/Hero.jsx";
+import Sponsor from "./components/3sponsor/Sponsor.jsx";
+import About from "./components/4about/About.jsx";
+import Events from "./components/5events-date/Events.jsx";
+import Inti from "./components/6kepanitiaan/1inti/Inti.jsx";
+import Divisi from "./components/6kepanitiaan/2divisi/Divisi.jsx";
+import Footer from "./components/7footer/Footer.jsx";
 
 function App() {
   return (
     <>
+      <ContactButton />
       <Navbar />
       <Hero />
       <Sponsor />

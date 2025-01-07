@@ -1,0 +1,104 @@
+/* ! Main container */
+.divisi-container {
+  --gap-row: clamp(1.25rem, 2.5vw, 2.5rem);
+  --gap-col: clamp(5rem, 12.5vw, 10rem);
+
+  /* border: 1px solid; */
+  width: fit-content;
+  display: grid;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  gap: var(--gap-row) var(--gap-col);
+}
+@media screen and (min-width: 1280px) {
+  .divisi-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ! Divisi container */
+#divisi {
+  --item-gap: clamp(1rem, 2.5vw, 2rem);
+
+  /* ! Activate this to show the bounding box */
+  /* border: 1px solid; */
+  display: flex;
+  gap: var(--item-gap);
+  justify-content: center;
+}
+#foto-co {
+  --size: clamp(120px, 22.5vw, 180px);
+  
+  width: var(--size);
+  height: var(--size);
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--def-shadow);
+
+  filter: saturate(1.35) contrast(0.8) brightness(1.1);
+}
+
+/* ! Info container > nama, desc, foto anggota */
+#info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: center;
+}
+#info > * > p {
+  margin: 0;
+}
+
+.nama-divisi {
+  --font-sz: clamp(var(--txt-2xl), 4vw, var(--txt-3xl));
+  --line-hg: clamp(var(--lh-2xl), 5vw, var(--lh-3xl));
+  
+  font-size: var(--font-sz);
+  line-height: var(--line-hg);
+  font-weight: bold;
+}
+.deskripsi-divisi {
+  color: var(--secondary);
+}
+
+.pp-anggota {
+  --size: clamp(3rem, 8.5vw, 4.5rem);
+  --overlap: calc(-1 * clamp(1rem, 3vw, 1.5rem));
+  --border: clamp(2px, 0.75vw, 4px);
+  --border-col: var(--def-light);
+
+  display: flex;
+
+  & #pp {
+
+    width: var(--size);
+    border-radius: 50%;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    filter: saturate(1.35) contrast(0.9) brightness(1.1);
+    border: var(--border) solid var(--border-col);
+
+    z-index: -1;
+  }
+
+  & #pp:not(:first-child) {
+
+    margin-left: var(--overlap);
+  }
+  
+  & #remain {
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--def-black);
+    color: var(--def-white);
+
+    text-align: center;
+    align-content: center;
+
+    border-radius: 50%;
+    border: var(--border) solid var(--border-col);
+    margin-left: var(--overlap);
+  }
+}

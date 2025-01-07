@@ -1,0 +1,9 @@
+.logo-row {
+  display: flex;
+  gap: 10px; /* Jarak antar logo */
+}
+
+.logo-row img {
+  width: 80px; /* Ukuran logo */
+  background-color: transparent;
+}

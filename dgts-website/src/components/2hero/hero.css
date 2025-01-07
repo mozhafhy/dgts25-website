@@ -1,0 +1,54 @@
+:root {
+  --padding: 20px;
+}
+
+.container-fluid {
+  position: relative;
+  padding: var(--padding);
+  filter: saturate(1.75);
+}
+
+.btn-underline {
+  text-decoration: underline;
+  color: var(--def-black);
+  text-align: center;
+
+  & svg {
+    --size: clamp(24px, 4vw, 32px);
+    --margin: clamp(5px, 1vw, 7.5px);
+
+    width: var(--size);
+    height: var(--size);
+    margin-left: var(--margin);
+
+    & path {
+      fill: var(--def-black);
+    }
+  }
+}
+
+#hero-img {
+  --border-rad: clamp(12px, 2.25vw, 24px);
+
+  width: 100%;
+  height: 100dvh;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: var(--border-rad);
+  box-shadow: var(--def-shadow);
+
+  filter: brightness(0.8);
+}
+
+.hero-text {
+  --top-pad: 17.5%;
+
+  position: absolute;
+  top: calc(var(--padding) + var(--top-pad));
+  left: 7.5%;
+  right: 7.5%;
+
+  text-shadow: var(--def-shadow);
+}

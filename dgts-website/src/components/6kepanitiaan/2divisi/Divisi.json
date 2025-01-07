@@ -1,0 +1,152 @@
+[
+  {
+    "key": 0,
+    "isOddChild": false,
+    "fotoCO": "img-div/1Humas/0.jpg",
+    "divisi": "Humas",
+    "deskripsi": "Hubungan masyarakat",
+    "foto": [
+      "img-div/1Humas/1.jpg",
+      "img-div/1Humas/2.jpg",
+      "img-div/1Humas/3.jpg",
+      "img-div/1Humas/4.jpg",
+      "img-div/1Humas/5.jpg"
+    ]
+  },
+  {
+    "key": 1,
+    "isOddChild": true,
+    "fotoCO": "img-div/2Pendanaan/0.jpg",
+    "divisi": "Pendanaan",
+    "deskripsi": "Kerja! Kerja! Kerja!",
+    "foto": [
+      "img-div/2Pendanaan/1.jpg",
+      "img-div/2Pendanaan/2.jpg",
+      "img-div/2Pendanaan/3.jpg",
+      "img-div/2Pendanaan/4.jpg",
+      "img-div/2Pendanaan/5.jpg",
+      "img-div/2Pendanaan/6.jpg",
+      "img-div/2Pendanaan/7.jpg",
+      "img-div/2Pendanaan/8.jpg",
+      "img-div/2Pendanaan/9.jpg",
+      "img-div/2Pendanaan/10.jpg"
+    ]
+  },
+  {
+    "key": 2,
+    "isOddChild": false,
+    "fotoCO": "img-div/3Kreatif/0.jpg",
+    "divisi": "Kreatif",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "foto": [
+      "img-div/3Kreatif/1.jpg",
+      "img-div/3Kreatif/2.jpg",
+      "img-div/3Kreatif/3.jpg",
+      "img-div/3Kreatif/4.jpg",
+      "img-div/3Kreatif/5.jpg",
+      "img-div/3Kreatif/6.jpg",
+      "img-div/3Kreatif/7.jpg",
+      "img-div/3Kreatif/8.jpg",
+      "img-div/3Kreatif/9.jpg"
+    ]
+  },
+  {
+    "key": 3,
+    "isOddChild": true,
+    "fotoCO": "img-div/4Konsumsi/0.jpg",
+    "divisi": "Konsumsi",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "foto": [
+      "img-div/4Konsumsi/1.jpg",
+      "img-div/4Konsumsi/2.jpg",
+      "img-div/4Konsumsi/3.jpg",
+      "img-div/4Konsumsi/4.jpg",
+      "img-div/4Konsumsi/5.jpg",
+      "img-div/4Konsumsi/6.jpg",
+      "img-div/4Konsumsi/7.jpg"
+    ]
+  },
+  {
+    "key": 4,
+    "isOddChild": false,
+    "fotoCO": "img-div/5Perkap/0.jpg",
+    "divisi": "Perkap",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "foto": [
+      "img-div/5Perkap/1.jpg",
+      "img-div/5Perkap/2.jpg",
+      "img-div/5Perkap/3.jpg",
+      "img-div/5Perkap/4.jpg",
+      "img-div/5Perkap/5.jpg",
+      "img-div/5Perkap/6.jpg",
+      "img-div/5Perkap/7.jpg",
+      "img-div/5Perkap/8.jpg",
+      "img-div/5Perkap/9.jpg",
+      "img-div/5Perkap/10.jpg",
+      "img-div/5Perkap/11.jpg",
+      "img-div/5Perkap/12.jpg",
+      "img-div/5Perkap/13.jpg",
+      "img-div/5Perkap/14.jpg",
+      "img-div/5Perkap/15.jpg"
+    ]
+  },
+  {
+    "key": 5,
+    "isOddChild": true,
+    "fotoCO": "img-div/6Bedah Jurusan/0.jpg",
+    "divisi": "Bedah Jurusan",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "foto": [
+      "img-div/6Bedah Jurusan/1.jpg",
+      "img-div/6Bedah Jurusan/2.jpg",
+      "img-div/6Bedah Jurusan/3.jpg",
+      "img-div/6Bedah Jurusan/4.jpg",
+      "img-div/6Bedah Jurusan/5.jpg",
+      "img-div/6Bedah Jurusan/6.jpg",
+      "img-div/6Bedah Jurusan/7.jpg",
+      "img-div/6Bedah Jurusan/8.jpg",
+      "img-div/6Bedah Jurusan/9.jpg"
+    ]
+  },
+  {
+    "key": 6,
+    "isOddChild": false,
+    "fotoCO": "img-div/7Talkshow/0.jpg",
+    "divisi": "Talkshow",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "foto": [
+      "img-div/7Talkshow/1.jpg",
+      "img-div/7Talkshow/2.jpg",
+      "img-div/7Talkshow/3.jpg",
+      "img-div/7Talkshow/4.jpg",
+      "img-div/7Talkshow/5.jpg",
+      "img-div/7Talkshow/6.jpg",
+      "img-div/7Talkshow/7.jpg",
+      "img-div/7Talkshow/8.jpg",
+      "img-div/7Talkshow/9.jpg",
+      "img-div/7Talkshow/10.jpg",
+      "img-div/7Talkshow/11.jpg"
+    ]
+  },
+  {
+    "key": 7,
+    "isOddChild": true,
+    "fotoCO": "img-div/8Campus Expo/0.jpg",
+    "divisi": "Campus Expo",
+    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "foto": [
+      "img-div/8Campus Expo/1.jpg",
+      "img-div/8Campus Expo/2.jpg",
+      "img-div/8Campus Expo/3.jpg",
+      "img-div/8Campus Expo/4.jpg",
+      "img-div/8Campus Expo/5.jpg",
+      "img-div/8Campus Expo/6.jpg",
+      "img-div/8Campus Expo/7.jpg",
+      "img-div/8Campus Expo/8.jpg",
+      "img-div/8Campus Expo/9.jpg",
+      "img-div/8Campus Expo/10.jpg",
+      "img-div/8Campus Expo/11.jpg",
+      "img-div/8Campus Expo/12.jpg"
+    ]
+  }
+]
