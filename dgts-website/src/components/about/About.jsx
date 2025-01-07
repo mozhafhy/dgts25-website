@@ -2,18 +2,18 @@ import "./About.css";
 
 const path = "src/assets/about-images/";
 const images = [
-  path + "01.png",
-  path + "02.png",
-  path + "03.png",
-  path + "04.png",
-  path + "05.png",
-  path + "06.png",
-  path + "07.png",
-  path + "08.png",
-  path + "09.png",
-  path + "10.png",
-  path + "11.png",
-  path + "12.png",
+  `${path}01.png`,
+  `${path}02.png`,
+  `${path}03.png`,
+  `${path}04.png`,
+  `${path}05.png`,
+  `${path}06.png`,
+  `${path}07.png`,
+  `${path}08.png`,
+  `${path}09.png`,
+  `${path}10.png`,
+  `${path}11.png`,
+  `${path}12.png`,
 ];
 
 export default function About() {
