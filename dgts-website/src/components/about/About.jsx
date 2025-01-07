@@ -1,6 +1,6 @@
 import "./About.css";
 
-const path = "src/assets/about-images/";
+const path = "/about-images/";
 const images = [
   `${path}01.png`,
   `${path}02.png`,

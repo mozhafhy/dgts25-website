@@ -7,7 +7,7 @@ export default function Inti() {
       <h1 id="panit-title">Who&apos;s Behind DGTS 2025?</h1>
       <Panitia
         jabatan="ketua"
-        foto="src\components\kepanitiaan\inti\img\Rifqi Fauza_Ketua DGTS.jpg"
+        foto="img-inti/Rifqi Fauza_Ketua DGTS.jpg"
         nama="Rifqi Fauza Dani"
         posisi="Ketua Umum"
       />

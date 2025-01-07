@@ -22,12 +22,12 @@ const dropdown = (
 export default function Navbar() {
   return (
     <Nav>
-      <NavItem item="Presensi" isDropdown={true}>
+      <NavItem item="Menu" isDropdown={true}>
         <DropdownMenu />
       </NavItem>
       <NavItem item="Tiket" href="/" />
       <NavItem item="Kontak" href="/" />
-      <NavItem item="Mapping" href="/" />
+      <NavItem item="Talent Mapping" href="/" />
     </Nav>
   );
 }
