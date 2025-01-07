@@ -10,16 +10,6 @@
     "place": "Ruang kelas SMA Negeri 2 Lumajang"
   },
   {
-    "key": 1,
-    "event": "Bedah Jurusan",
-    "motto": "Know Your dreams, Shape Your Mission, and Decide Your Major",
-    "foto": "src/components/events-date/images/bedah_jurusan.JPG",
-    "color": "red-dark",
-    "desc": "Bedah Jurusan merupakan rangkaian acara Duacare Goes To School 2025 yang bertujuan untuk membantu siswa-siswi kelas XII SMA Negeri 2 Lumajang memahami berbagai jurusan di perguruan tinggi.",
-    "date": ["25 Januari 2025", "(06.45 - 12.00 WIB)"],
-    "place": "Ruang kelas SMA Negeri 2 Lumajang"
-  },
-  {
     "key": 2,
     "event": "Talkshow",
     "motto": "Dare to Dream, Dare to Achieve",
@@ -28,6 +18,16 @@
     "desc": "Talkshow merupakan kegiatan yang diadakan dalam rangkaian kegiatan DGTS 2025 berupa perbincangan atau diskusi bersama pemateri (alumni SMADA) yang diundang mengenai topik tertentu.",
     "date": ["24 Januari 202", "(12.45 - 16.15 WIB)"],
     "place": "Pinandhita Hall SMA Negeri 2 Lumajang"
+  },
+  {
+    "key": 1,
+    "event": "Bedah Jurusan",
+    "motto": "Know Your dreams, Shape Your Mission, and Decide Your Major",
+    "foto": "src/components/events-date/images/bedah_jurusan.JPG",
+    "color": "red-dark",
+    "desc": "Bedah Jurusan merupakan rangkaian acara Duacare Goes To School 2025 yang bertujuan untuk membantu siswa-siswi kelas XII SMA Negeri 2 Lumajang memahami berbagai jurusan di perguruan tinggi.",
+    "date": ["25 Januari 2025", "(06.45 - 12.00 WIB)"],
+    "place": "Ruang kelas SMA Negeri 2 Lumajang"
   },
   {
     "key": 3,
