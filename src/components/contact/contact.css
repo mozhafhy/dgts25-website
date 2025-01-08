@@ -20,14 +20,14 @@
   bottom: 0;
   right: 0;
 
-  margin: 0 20px 20px 0;
+  margin: 0 1rem 1rem 0;
   z-index: 100;
 }
 
 .kontak-container .float-button {
   --spread: clamp(1px, 0.5vw, 2px);
   --blur: clamp(7px, 1vw, 14px);
-  --shadow: 0 0 var(--blur) var(--spread) rgba(0, 46, 71, 0.4);
+  --shadow: 0 0 var(--blur) var(--spread) rgba(254, 241, 215, 0.4);
 
   box-shadow: var(--shadow);
   position: relative;
@@ -37,13 +37,20 @@
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
+  border: 2px solid var(--def-black);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   background: var(--def-white);
+  transition: box-shadow 300ms ease;
 }
 .kontak-container .float-button img {
   width: 24px;
+}
+
+.kontak-container .float-button:hover {
+  --shadow: 0 0 calc(var(--blur) + 5px) calc(var(--spread) + 3px) rgba(254, 241, 215, 0.7);
+  box-shadow: var(--shadow);
 }
