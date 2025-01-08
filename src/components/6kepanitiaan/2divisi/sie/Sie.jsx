@@ -34,8 +34,11 @@ export default function Sie(props) {
                 ))}
 
             {remain > 0 && (
-              <div className={`remain-open-${isOpen}`} onClick={toggle}>
-                {!isOpen ? "+" + remain : <i className="bi bi-x"></i>}
+              <div className="more-img">
+                <div className={`remain-open-${isOpen}`} onClick={toggle}>
+                  {!isOpen ? "+" + remain : <i className="bi bi-x"></i>}
+                </div>
+                {isOpen && <span>This is us!</span>}
               </div>
             )}
           </div>

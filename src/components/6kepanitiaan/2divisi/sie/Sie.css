@@ -106,12 +106,10 @@
     }
   }
 }
-
 .divisi:nth-child(odd) {
   /* border: 1px solid grey; */
   justify-content: flex-start;
 }
-
 .divisi:nth-child(even) {
   /* border: 1px solid grey; */
   & ._divisi {
@@ -120,6 +118,7 @@
   }
 }
 
+/* ! All staff */
 .all-staff {
   margin-top: 1rem;
   display: grid;
@@ -138,5 +137,21 @@
     border: 2px solid var(--def-black);
 
     z-index: -1;
+  }
+}
+
+/* ! Close button */
+.more-img {
+  --font-sz: clamp(1rem, 3vw, 1.5rem);
+  --line-hg: clamp(1.5rem, 4vw, 2rem);
+  
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  & span {
+    font-size: var(--font-sz);
+    line-height: var(--line-hg);
+    font-weight: bold;
   }
 }
