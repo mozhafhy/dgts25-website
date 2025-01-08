@@ -1,25 +1,49 @@
-/* ! Contact button */
-.kontak {
-  background: var(--def-black);
+:root {
+  --size: clamp(56px, 5vw, 72px);
+}
 
-  width: 24px;
-  height: 24px;
-  padding: 10px;
-  border-radius: 50%;
+* {
+  & a {
+    text-decoration: none;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+.kontak-container {
+  /* border: 1px solid black; */
+
+  width: fit-content;
+  height: fit-content;
 
   position: fixed;
-  top: 100px;
-  
-  & > * {
-    z-index: 100;
-  }
+  bottom: 0;
+  right: 0;
+
+  margin: 0 20px 20px 0;
   z-index: 100;
-  
-  & svg {
-    position: fixed;
-    top: 100px;
-    path {
-      fill: var(--def-light);
-    }
-  }
+}
+
+.kontak-container .float-button {
+  --spread: clamp(1px, 0.5vw, 2px);
+  --blur: clamp(7px, 1vw, 14px);
+  --shadow: 0 0 var(--blur) var(--spread) rgba(0, 46, 71, 0.4);
+
+  box-shadow: var(--shadow);
+  position: relative;
+  bottom: 0;
+  right: 0;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--def-white);
+}
+.kontak-container .float-button img {
+  width: 24px;
 }
