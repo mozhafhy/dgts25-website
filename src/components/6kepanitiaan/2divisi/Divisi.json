@@ -3,6 +3,7 @@
     "key": 0,
     "isOddChild": false,
     "fotoCO": "img-div/1Humas/0.jpg",
+    "namaCO": "Riki Nanda Wili Pratama",
     "divisi": "Humas",
     "deskripsi": "Hubungan masyarakat",
     "foto": [
@@ -17,6 +18,7 @@
     "key": 1,
     "isOddChild": true,
     "fotoCO": "img-div/2Pendanaan/0.jpg",
+    "namaCO": "Nayla Matsuda Saeko",
     "divisi": "Pendanaan",
     "deskripsi": "Kerja! Kerja! Kerja!",
     "foto": [
@@ -36,8 +38,9 @@
     "key": 2,
     "isOddChild": false,
     "fotoCO": "img-div/3Kreatif/0.jpg",
+    "namaCO": "Naqiya Fayyaza Noor Wijaya",
     "divisi": "Kreatif",
-    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "deskripsi": "\u5e0c",
     "foto": [
       "img-div/3Kreatif/1.jpg",
       "img-div/3Kreatif/2.jpg",
@@ -54,8 +57,9 @@
     "key": 3,
     "isOddChild": true,
     "fotoCO": "img-div/4Konsumsi/0.jpg",
+    "namaCO": "Cantika Asri Rosa",
     "divisi": "Konsumsi",
-    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "deskripsi": "\u5e0c",
     "foto": [
       "img-div/4Konsumsi/1.jpg",
       "img-div/4Konsumsi/2.jpg",
@@ -70,8 +74,9 @@
     "key": 4,
     "isOddChild": false,
     "fotoCO": "img-div/5Perkap/0.jpg",
+    "namaCO": "Rafli Dwi Zaidan",
     "divisi": "Perkap",
-    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "deskripsi": "\u5e0c",
     "foto": [
       "img-div/5Perkap/1.jpg",
       "img-div/5Perkap/2.jpg",
@@ -93,27 +98,10 @@
   {
     "key": 5,
     "isOddChild": true,
-    "fotoCO": "img-div/6Bedah Jurusan/0.jpg",
-    "divisi": "Bedah Jurusan",
-    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
-    "foto": [
-      "img-div/6Bedah Jurusan/1.jpg",
-      "img-div/6Bedah Jurusan/2.jpg",
-      "img-div/6Bedah Jurusan/3.jpg",
-      "img-div/6Bedah Jurusan/4.jpg",
-      "img-div/6Bedah Jurusan/5.jpg",
-      "img-div/6Bedah Jurusan/6.jpg",
-      "img-div/6Bedah Jurusan/7.jpg",
-      "img-div/6Bedah Jurusan/8.jpg",
-      "img-div/6Bedah Jurusan/9.jpg"
-    ]
-  },
-  {
-    "key": 6,
-    "isOddChild": false,
     "fotoCO": "img-div/7Talkshow/0.jpg",
+    "namaCO": "Antania Dyah Absari",
     "divisi": "Talkshow",
-    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "deskripsi": "\u5e0c",
     "foto": [
       "img-div/7Talkshow/1.jpg",
       "img-div/7Talkshow/2.jpg",
@@ -129,11 +117,31 @@
     ]
   },
   {
+    "key": 6,
+    "isOddChild": false,
+    "fotoCO": "img-div/6Bedah Jurusan/0.jpg",
+    "namaCO": "Anggit Wahyu Nugroho",
+    "divisi": "Bedah Jurusan",
+    "deskripsi": "\u5e0c",
+    "foto": [
+      "img-div/6Bedah Jurusan/1.jpg",
+      "img-div/6Bedah Jurusan/2.jpg",
+      "img-div/6Bedah Jurusan/3.jpg",
+      "img-div/6Bedah Jurusan/4.jpg",
+      "img-div/6Bedah Jurusan/5.jpg",
+      "img-div/6Bedah Jurusan/6.jpg",
+      "img-div/6Bedah Jurusan/7.jpg",
+      "img-div/6Bedah Jurusan/8.jpg",
+      "img-div/6Bedah Jurusan/9.jpg"
+    ]
+  },
+  {
     "key": 7,
     "isOddChild": true,
     "fotoCO": "img-div/8Campus Expo/0.jpg",
+    "namaCO": "Himawan Rakha Bhadra",
     "divisi": "Campus Expo",
-    "deskripsi": "Kasih deskripsi atau jargon gitu \u5e0c",
+    "deskripsi": "\u5e0c",
     "foto": [
       "img-div/8Campus Expo/1.jpg",
       "img-div/8Campus Expo/2.jpg",
