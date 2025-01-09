@@ -8,12 +8,7 @@ import { CSSTransition } from "react-transition-group";
 
 // ! Icon dropdown
 const dropdown = (
-  <svg
-    width="10"
-    height="6"
-    viewBox="0 0 10 6"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#ffffff" />
   </svg>
 );
@@ -22,7 +17,7 @@ const dropdown = (
 export default function Navbar() {
   return (
     <Nav>
-      <NavItem item="Presensi" isDropdown={true}>
+      <NavItem item="Menu" isDropdown={true}>
         <DropdownMenu />
       </NavItem>
       <NavItem item="Tiket" href="/" />
@@ -50,16 +45,8 @@ function NavItem(props) {
   const [open, setOpen] = useState(false);
   return (
     <li>
-      <button
-        id={props.isDropdown ? (open ? "active" : "is-dropdown") : "opsi-item"}
-        onClick={() => setOpen(!open)}
-      >
-        <a
-          href={props.href}
-          className="h6"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <button id={props.isDropdown ? (open ? "active" : "is-dropdown") : "opsi-item"} onClick={() => setOpen(!open)}>
+        <a href={props.href} className="h6" target="_blank" rel="noopener noreferrer">
           {props.item}
         </a>
         {/* Kalo dia dropdown, kasi icon dropdown di sebelahnya */}
@@ -82,13 +69,7 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a
-        href={props.href}
-        target="_blank"
-        className="dropdown-item"
-        rel="noopener noreferrer"
-        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
-      >
+      <a href={props.href} target="_blank" className="dropdown-item" rel="noopener noreferrer" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         {props.children}
       </a>
     );
@@ -96,13 +77,7 @@ function DropdownMenu() {
 
   return (
     <div className="dropdown" style={{ height: menuHeigth }}>
-      <CSSTransition
-        in={activeMenu === "main"}
-        unmountOnExit
-        timeout={300}
-        classNames="menu-primary"
-        onEnter={calcHeight}
-      >
+      <CSSTransition in={activeMenu === "main"} unmountOnExit timeout={300} classNames="menu-primary" onEnter={calcHeight}>
         <div id="menu" className="menu-all">
           <DropdownItem href="/">Roadshow</DropdownItem>
           <DropdownItem href="/">Bedah Jurusan</DropdownItem>
@@ -111,13 +86,7 @@ function DropdownMenu() {
         </div>
       </CSSTransition>
 
-      <CSSTransition
-        in={activeMenu === "opsi"}
-        unmountOnExit
-        timeout={300}
-        classNames="menu-secondary"
-        onEnter={calcHeight}
-      >
+      <CSSTransition in={activeMenu === "opsi"} unmountOnExit timeout={300} classNames="menu-secondary" onEnter={calcHeight}>
         <div id="menu" className="menu-talkshow">
           <DropdownItem goToMenu="main">Talkshow</DropdownItem>
           <DropdownItem href="/">Ruang Manifestasi</DropdownItem>
