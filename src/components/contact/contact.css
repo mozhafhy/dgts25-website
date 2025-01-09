@@ -1,0 +1,113 @@
+:root {
+  --size: clamp(56px, 5vw, 72px);
+}
+
+* {
+  & a {
+    text-decoration: none;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  /* border: 1px solid; */
+
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+
+  bottom: 0;
+  right: 0;
+
+  margin: 0 1rem 1rem 0;
+  z-index: 100;
+}
+
+.popover {
+  position: relative;
+  background: var(--def-light);
+  color: var(--def-black);
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 0 10px;
+
+  margin-bottom: 6px;
+  width: max-content;
+  bottom: var(--size);
+  border: 2px solid var(--secondary);
+
+  animation: fade-in 1000ms;
+
+  box-shadow: var(--def-shadow);
+
+  & > * {
+    margin: 0;
+  }
+
+  & > p {
+    padding: 5px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.close {
+  position: relative;
+  background: var(--secondary);
+  width: 100%;
+  color: var(--def-light);
+  text-align: right;
+
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+
+  & .x {
+    margin: 0 5px 0 0;
+  }
+}
+.closed {
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+/* ! Contact button */
+.kontak-container .float-button {
+  --spread: clamp(1px, 0.5vw, 2px);
+  --blur: clamp(7px, 1vw, 14px);
+  --shadow: 0 0 var(--blur) var(--spread) rgba(254, 241, 215, 0.4);
+
+  box-shadow: var(--shadow);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 30%;
+  border: 2px solid var(--def-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--def-black);
+  transition: box-shadow 300ms ease;
+}
+.kontak-container .float-button img {
+  width: 24px;
+}
+
+.kontak-container .float-button:hover {
+  --shadow: 0 0 calc(var(--blur) + 5px) calc(var(--spread) + 3px)
+    rgba(254, 241, 215, 0.7);
+  box-shadow: var(--shadow);
+}
