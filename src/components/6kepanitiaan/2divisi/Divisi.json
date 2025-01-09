@@ -7,11 +7,26 @@
     "divisi": "Humas",
     "deskripsi": "Hubungan masyarakat",
     "foto": [
-      "img-div/1Humas/1.jpg",
-      "img-div/1Humas/2.jpg",
-      "img-div/1Humas/3.jpg",
-      "img-div/1Humas/4.jpg",
-      "img-div/1Humas/5.jpg"
+      {
+        "source": "img-div/1Humas/1.jpg",
+        "nama": "Atha"
+      },
+      {
+        "source": "img-div/1Humas/2.jpg",
+        "nama": "Ijuk"
+      },
+      {
+        "source": "img-div/1Humas/3.jpg",
+        "nama": "Rizki"
+      },
+      {
+        "source": "img-div/1Humas/4.jpg",
+        "nama": "Ariel"
+      },
+      {
+        "source": "img-div/1Humas/5.jpg",
+        "nama": "Reisha"
+      }
     ]
   },
   {
@@ -22,16 +37,46 @@
     "divisi": "Pendanaan",
     "deskripsi": "Kerja! Kerja! Kerja!",
     "foto": [
-      "img-div/2Pendanaan/1.jpg",
-      "img-div/2Pendanaan/2.jpg",
-      "img-div/2Pendanaan/3.jpg",
-      "img-div/2Pendanaan/4.jpg",
-      "img-div/2Pendanaan/5.jpg",
-      "img-div/2Pendanaan/6.jpg",
-      "img-div/2Pendanaan/7.jpg",
-      "img-div/2Pendanaan/8.jpg",
-      "img-div/2Pendanaan/9.jpg",
-      "img-div/2Pendanaan/10.jpg"
+      {
+        "source": "img-div/2Pendanaan/1.jpg",
+        "nama": "Dhani"
+      },
+      {
+        "source": "img-div/2Pendanaan/2.jpg",
+        "nama": "Annisa"
+      },
+      {
+        "source": "img-div/2Pendanaan/3.jpg",
+        "nama": "Arga"
+      },
+      {
+        "source": "img-div/2Pendanaan/4.jpg",
+        "nama": "Clarista"
+      },
+      {
+        "source": "img-div/2Pendanaan/5.jpg",
+        "nama": "Fabian"
+      },
+      {
+        "source": "img-div/2Pendanaan/6.jpg",
+        "nama": "Haztia"
+      },
+      {
+        "source": "img-div/2Pendanaan/7.jpg",
+        "nama": "David"
+      },
+      {
+        "source": "img-div/2Pendanaan/8.jpg",
+        "nama": "Aga"
+      },
+      {
+        "source": "img-div/2Pendanaan/9.jpg",
+        "nama": "Nisa"
+      },
+      {
+        "source": "img-div/2Pendanaan/10.jpg",
+        "nama": "Reno"
+      }
     ]
   },
   {
@@ -42,15 +87,46 @@
     "divisi": "Kreatif",
     "deskripsi": "\u5e0c",
     "foto": [
-      "img-div/3Kreatif/1.jpg",
-      "img-div/3Kreatif/2.jpg",
-      "img-div/3Kreatif/3.jpg",
-      "img-div/3Kreatif/4.jpg",
-      "img-div/3Kreatif/5.jpg",
-      "img-div/3Kreatif/6.jpg",
-      "img-div/3Kreatif/7.jpg",
-      "img-div/3Kreatif/8.jpg",
-      "img-div/3Kreatif/9.jpg"
+      {
+        "source": "img-div/3Kreatif/1.jpg",
+        "nama": "Ellie"
+      },
+      {
+        "source": "img-div/3Kreatif/2.jpg",
+        "nama": "Martha"
+      },
+      {
+        "source": "img-div/3Kreatif/3.jpg",
+        "nama": "Naumy"
+      },
+      {
+        "source": "img-div/3Kreatif/4.jpg",
+        "nama": "Wanda"
+      },
+      {
+        "source": "img-div/3Kreatif/5.jpg",
+        "nama": "Pryanka"
+      },
+      {
+        "source": "img-div/3Kreatif/6.jpg",
+        "nama": "Radit"
+      },
+      {
+        "source": "img-div/3Kreatif/7.jpg",
+        "nama": "Silvia"
+      },
+      {
+        "source": "img-div/3Kreatif/8.jpg",
+        "nama": "Vania"
+      },
+      {
+        "source": "img-div/3Kreatif/9.jpg",
+        "nama": "Hudan"
+      },
+      {
+        "source": "img-div/3Kreatif/10.jpg",
+        "nama": "Nif"
+      }
     ]
   },
   {
@@ -61,13 +137,34 @@
     "divisi": "Konsumsi",
     "deskripsi": "\u5e0c",
     "foto": [
-      "img-div/4Konsumsi/1.jpg",
-      "img-div/4Konsumsi/2.jpg",
-      "img-div/4Konsumsi/3.jpg",
-      "img-div/4Konsumsi/4.jpg",
-      "img-div/4Konsumsi/5.jpg",
-      "img-div/4Konsumsi/6.jpg",
-      "img-div/4Konsumsi/7.jpg"
+      {
+        "source": "img-div/4Konsumsi/1.jpg",
+        "nama": "Aida"
+      },
+      {
+        "source": "img-div/4Konsumsi/2.jpg",
+        "nama": "Danang"
+      },
+      {
+        "source": "img-div/4Konsumsi/3.jpg",
+        "nama": "Lala"
+      },
+      {
+        "source": "img-div/4Konsumsi/4.jpg",
+        "nama": "Iza"
+      },
+      {
+        "source": "img-div/4Konsumsi/5.jpg",
+        "nama": "Angga"
+      },
+      {
+        "source": "img-div/4Konsumsi/6.jpg",
+        "nama": "Naurah"
+      },
+      {
+        "source": "img-div/4Konsumsi/7.jpg",
+        "nama": "Rere"
+      }
     ]
   },
   {
@@ -78,21 +175,66 @@
     "divisi": "Perkap",
     "deskripsi": "\u5e0c",
     "foto": [
-      "img-div/5Perkap/1.jpg",
-      "img-div/5Perkap/2.jpg",
-      "img-div/5Perkap/3.jpg",
-      "img-div/5Perkap/4.jpg",
-      "img-div/5Perkap/5.jpg",
-      "img-div/5Perkap/6.jpg",
-      "img-div/5Perkap/7.jpg",
-      "img-div/5Perkap/8.jpg",
-      "img-div/5Perkap/9.jpg",
-      "img-div/5Perkap/10.jpg",
-      "img-div/5Perkap/11.jpg",
-      "img-div/5Perkap/12.jpg",
-      "img-div/5Perkap/13.jpg",
-      "img-div/5Perkap/14.jpg",
-      "img-div/5Perkap/15.jpg"
+      {
+        "source": "img-div/5Perkap/1.jpg",
+        "nama": "Adit"
+      },
+      {
+        "source": "img-div/5Perkap/2.jpg",
+        "nama": "Akmal"
+      },
+      {
+        "source": "img-div/5Perkap/3.jpg",
+        "nama": "Alfan"
+      },
+      {
+        "source": "img-div/5Perkap/4.jpg",
+        "nama": "Beryl"
+      },
+      {
+        "source": "img-div/5Perkap/5.jpg",
+        "nama": "Biharul"
+      },
+      {
+        "source": "img-div/5Perkap/6.jpg",
+        "nama": "Devan"
+      },
+      {
+        "source": "img-div/5Perkap/7.jpg",
+        "nama": "Faisal"
+      },
+      {
+        "source": "img-div/5Perkap/8.jpg",
+        "nama": "Hanan"
+      },
+      {
+        "source": "img-div/5Perkap/9.jpg",
+        "nama": "Billy"
+      },
+      {
+        "source": "img-div/5Perkap/10.jpg",
+        "nama": "Halim"
+      },
+      {
+        "source": "img-div/5Perkap/11.jpg",
+        "nama": "Fahri"
+      },
+      {
+        "source": "img-div/5Perkap/12.jpg",
+        "nama": "Ilham"
+      },
+      {
+        "source": "img-div/5Perkap/13.jpg",
+        "nama": "Rafly"
+      },
+      {
+        "source": "img-div/5Perkap/14.jpg",
+        "nama": "Rifky"
+      },
+      {
+        "source": "img-div/5Perkap/15.jpg",
+        "nama": "Yulian"
+      }
     ]
   },
   {
@@ -103,17 +245,46 @@
     "divisi": "Talkshow",
     "deskripsi": "\u5e0c",
     "foto": [
-      "img-div/7Talkshow/1.jpg",
-      "img-div/7Talkshow/2.jpg",
-      "img-div/7Talkshow/3.jpg",
-      "img-div/7Talkshow/4.jpg",
-      "img-div/7Talkshow/5.jpg",
-      "img-div/7Talkshow/6.jpg",
-      "img-div/7Talkshow/7.jpg",
-      "img-div/7Talkshow/8.jpg",
-      "img-div/7Talkshow/9.jpg",
-      "img-div/7Talkshow/10.jpg",
-      "img-div/7Talkshow/11.jpg"
+      {
+        "source": "img-div/7Talkshow/1.jpg",
+        "nama": "Alexandra"
+      },
+      {
+        "source": "img-div/7Talkshow/2.jpg",
+        "nama": "Anggraini"
+      },
+      {
+        "source": "img-div/7Talkshow/3.jpg",
+        "nama": "Aufil"
+      },
+      {
+        "source": "img-div/7Talkshow/4.jpg",
+        "nama": "Azriel"
+      },
+      {
+        "source": "img-div/7Talkshow/6.jpg",
+        "nama": "Cantika T."
+      },
+      {
+        "source": "img-div/7Talkshow/7.jpg",
+        "nama": "Denanda"
+      },
+      {
+        "source": "img-div/7Talkshow/8.jpg",
+        "nama": "Firdi"
+      },
+      {
+        "source": "img-div/7Talkshow/9.jpg",
+        "nama": "Dwiky"
+      },
+      {
+        "source": "img-div/7Talkshow/10.jpg",
+        "nama": "Nina"
+      },
+      {
+        "source": "img-div/7Talkshow/11.jpg",
+        "nama": "Sunni"
+      }
     ]
   },
   {
@@ -124,15 +295,42 @@
     "divisi": "Bedah Jurusan",
     "deskripsi": "\u5e0c",
     "foto": [
-      "img-div/6Bedah Jurusan/1.jpg",
-      "img-div/6Bedah Jurusan/2.jpg",
-      "img-div/6Bedah Jurusan/3.jpg",
-      "img-div/6Bedah Jurusan/4.jpg",
-      "img-div/6Bedah Jurusan/5.jpg",
-      "img-div/6Bedah Jurusan/6.jpg",
-      "img-div/6Bedah Jurusan/7.jpg",
-      "img-div/6Bedah Jurusan/8.jpg",
-      "img-div/6Bedah Jurusan/9.jpg"
+      {
+        "source": "img-div/6Bedah Jurusan/1.jpg",
+        "nama": "Adinda"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/2.jpg",
+        "nama": "Aulia"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/3.jpg",
+        "nama": "Danty"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/4.jpg",
+        "nama": "Dwi S."
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/5.jpg",
+        "nama": "Naura"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/6.jpg",
+        "nama": "Nyimas"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/7.jpg",
+        "nama": "Sandrin"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/8.jpg",
+        "nama": "Raffa"
+      },
+      {
+        "source": "img-div/6Bedah Jurusan/9.jpg",
+        "nama": "Yumnan"
+      }
     ]
   },
   {
@@ -143,18 +341,54 @@
     "divisi": "Campus Expo",
     "deskripsi": "CAM CAM CAMPEX!",
     "foto": [
-      "img-div/8Campus Expo/1.jpg",
-      "img-div/8Campus Expo/2.jpg",
-      "img-div/8Campus Expo/3.jpg",
-      "img-div/8Campus Expo/4.jpg",
-      "img-div/8Campus Expo/5.jpg",
-      "img-div/8Campus Expo/6.jpg",
-      "img-div/8Campus Expo/7.jpg",
-      "img-div/8Campus Expo/8.jpg",
-      "img-div/8Campus Expo/9.jpg",
-      "img-div/8Campus Expo/10.jpg",
-      "img-div/8Campus Expo/11.jpg",
-      "img-div/8Campus Expo/12.jpg"
+      {
+        "source": "img-div/8Campus Expo/1.jpg",
+        "nama": "Nabila"
+      },
+      {
+        "source": "img-div/8Campus Expo/2.jpg",
+        "nama": "Artanti"
+      },
+      {
+        "source": "img-div/8Campus Expo/3.jpg",
+        "nama": "Azza"
+      },
+      {
+        "source": "img-div/8Campus Expo/4.jpg",
+        "nama": "Fidiyah"
+      },
+      {
+        "source": "img-div/8Campus Expo/5.jpg",
+        "nama": "Keisya"
+      },
+      {
+        "source": "img-div/8Campus Expo/6.jpg",
+        "nama": "Mirna"
+      },
+      {
+        "source": "img-div/8Campus Expo/7.jpg",
+        "nama": "Zhafif"
+      },
+      {
+        "source": "img-div/8Campus Expo/8.jpg",
+        "nama": "Nasywa"
+      },
+      {
+        "source": "img-div/8Campus Expo/9.jpg",
+        "nama": "Niken"
+      },
+      {
+        "source": "img-div/8Campus Expo/10.jpg",
+        "nama": "Risma"
+      },
+      {
+        "source": "img-div/8Campus Expo/11.jpg",
+        "nama": "Nahdah"
+      },
+      {
+        "source": "img-div/8Campus Expo/12.jpg",
+        "nama": "Rara"
+      }
     ]
   }
 ]

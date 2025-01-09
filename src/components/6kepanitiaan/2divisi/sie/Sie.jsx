@@ -15,7 +15,7 @@ export default function Sie(props) {
     setHeight(ref.current.clientHeight);
   };
 
-  const currHeight = isOpen ? height + 17 : 0; // ! F it, just hardcode it!
+  const currHeight = isOpen ? height + 22 : 0; // ! F it, just hardcode it!
 
   const fotos = props.foto;
   const length = fotos.length;
@@ -31,16 +31,18 @@ export default function Sie(props) {
           <div className="deskripsi-div">
             <p className="nama-divisi">{props.divisi}</p>
             <p className="deskripsi-divisi">{props.deskripsi}</p>
-            {isOpen && <p className="deskripsi-divisi">CO: {props.namaCO}</p>}
+            {isOpen && (
+              <p className="deskripsi-divisi co-name">CO: {props.namaCO}</p>
+            )}
           </div>
-          <div className="pp-anggota">
+          <div className="pp-container">
             {!isOpen &&
               fotos
                 .slice(0, 4)
                 .map((foto, key) => (
                   <img
                     className="pp"
-                    src={foto}
+                    src={foto.source}
                     key={key}
                     alt={`Staff-${key}`}
                   />
@@ -67,7 +69,14 @@ export default function Sie(props) {
       <div className="staff-container" style={{ height: currHeight + "px" }}>
         <div className="container-content" ref={ref}>
           {fotos.map((foto, key) => (
-            <img className="pp" src={foto} key={key} alt={`Staff-${key}`} />
+            <div className="staff" key={key}>
+              <img
+                className="staff-pp"
+                src={foto.source}
+                alt={`Staff-${key}`}
+              />
+              <span className="staff-name">{foto.nama}</span>
+            </div>
           ))}
         </div>
       </div>

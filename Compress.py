@@ -27,4 +27,4 @@ def resize(init_path, w=750, h=750, qual=95):
         replacement.close()
 
 source = "D:/Backup/dummy"
-resize(source, 1250, 1250)
+resize(source)

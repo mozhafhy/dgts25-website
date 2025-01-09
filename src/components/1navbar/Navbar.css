@@ -40,7 +40,6 @@
   background: none;
   color: var(--def-light);
   height: var(--nav-heigth);
-
 }
 #is-dropdown {
   height: fit-content;
@@ -49,7 +48,7 @@
   background: white;
   color: var(--def-black);
   margin-right: 0.5rem;
-  
+
   & > svg {
     margin-left: 5px;
     margin-bottom: 0px;
@@ -59,14 +58,15 @@
     fill: var(--def-black);
   }
 }
-#opsi-item:hover, #is-dropdown:hover {
+#opsi-item:hover,
+#is-dropdown:hover {
   height: var(--nav-heigth);
   padding: 0 0.5rem;
   background-color: var(--def-light);
   color: var(--def-black);
   border: none;
   border-radius: 0;
-  
+
   & .h6 {
     font-weight: bold;
   }
@@ -75,7 +75,7 @@
     margin-left: 5px;
     margin-bottom: 0px;
   }
-  
+
   & > svg path {
     fill: var(--def-black);
   }
@@ -88,7 +88,7 @@
   border: none;
   border-radius: 0;
   margin-right: 0.5rem;
-  
+
   & .h6 {
     font-weight: bold;
   }
@@ -97,7 +97,7 @@
     margin-left: 5px;
     margin-bottom: 0px;
   }
-  
+
   & > svg path {
     fill: var(--def-black);
   }
@@ -115,19 +115,29 @@
 .dropdown {
   position: absolute;
   top: var(--nav-heigth);
-  width: 241px;
+  width: 100%;
   background: var(--primary);
   overflow: hidden;
 
-  transition: height 300ms ease;
+  animation: move 300ms ease;
+}
+@keyframes move {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 /* ! Style item dropdown --> function DropdownItem */
 .dropdown-item {
+  --padding: clamp(12px, 3vw, 24px);
+
   height: 2rem;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: var(--padding) 10px;
   cursor: pointer;
 }
 .dropdown-item:hover {
@@ -135,40 +145,8 @@
   font-weight: bold;
 }
 
-/* ! Transisi nested dropdown */
-.menu-primary-enter {
-  position: absolute;
-  transform: translateX(-110%);
-}
-.menu-primary-enter-active {
-  transform: translateX(0%);
-  transition: all 300ms ease;
-}
-.menu-primary-exit {
-  position: absolute;
-}
-.menu-primary-exit-active {
-  transform: translateX(-110%);
-  transition: all 300ms ease;
-}
+.dropdown-item:not(:last-child) {
+  --border: clamp(1px, 0.25vw, 2px);
 
-.menu-secondary-enter {
-  transform: translateX(110%);
-}
-.menu-secondary-enter-active {
-  transform: translateX(0%);
-  transition: all 300ms ease;
-}
-.menu-secondary-exit-active {
-  transform: translateX(110%);
-  transition: all 300ms ease;
-}
-
-/* ! Style menu untuk Talkshow */
-.menu-talkshow > *:first-child {
-  font-weight: bold;
-  background: var(--pressed);
-}
-.menu-talkshow > *:not(:first-child):hover {
-  background: var(--talkshow-child-pressed);
+  border-bottom: var(--border) solid var(--def-white);
 }
