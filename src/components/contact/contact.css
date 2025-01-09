@@ -10,18 +10,69 @@
   padding: 0;
 }
 
-.kontak-container {
-  /* border: 1px solid black; */
+.main-container {
+  /* border: 1px solid; */
 
+  position: fixed;
   width: fit-content;
   height: fit-content;
 
-  position: fixed;
   bottom: 0;
   right: 0;
 
   margin: 0 1rem 1rem 0;
   z-index: 100;
+}
+
+.popover {
+  position: relative;
+  color: var(--def-black);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+  width: max-content;
+  bottom: var(--size);
+  border: 2px solid var(--def-black);
+
+  animation: fade-in 500ms;
+
+  box-shadow: var(--def-shadow);
+
+  & > * {
+    margin: 0;
+  }
+
+  & > p {
+    padding: 5px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.close {
+  position: relative;
+  background: var(--def-black);
+  width: 100%;
+  color: white;
+  text-align: right;
+
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+
+  & .x {
+    margin: 0 5px 0 0;
+  }
+}
+.closed {
+  opacity: 0;
+  transition: all 250ms ease;
 }
 
 .kontak-container .float-button {
@@ -30,20 +81,20 @@
   --shadow: 0 0 var(--blur) var(--spread) rgba(254, 241, 215, 0.4);
 
   box-shadow: var(--shadow);
-  position: relative;
+  position: absolute;
   bottom: 0;
   right: 0;
 
   width: var(--size);
   height: var(--size);
-  border-radius: 50%;
-  border: 2px solid var(--def-black);
+  border-radius: 30%;
+  border: 2px solid var(--def-light);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: var(--def-white);
+  background: var(--def-black);
   transition: box-shadow 300ms ease;
 }
 .kontak-container .float-button img {
@@ -51,6 +102,7 @@
 }
 
 .kontak-container .float-button:hover {
-  --shadow: 0 0 calc(var(--blur) + 5px) calc(var(--spread) + 3px) rgba(254, 241, 215, 0.7);
+  --shadow: 0 0 calc(var(--blur) + 5px) calc(var(--spread) + 3px)
+    rgba(254, 241, 215, 0.7);
   box-shadow: var(--shadow);
 }
