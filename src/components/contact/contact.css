@@ -36,7 +36,7 @@
   margin-bottom: 6px;
   width: max-content;
   bottom: var(--size);
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--def-black);
 
   animation: fade-in 1000ms;
 
@@ -62,7 +62,7 @@
 
 .close {
   position: relative;
-  background: var(--secondary);
+  background: var(--def-black);
   width: 100%;
   color: var(--def-light);
   text-align: right;
@@ -107,7 +107,6 @@
 }
 
 .kontak-container .float-button:hover {
-  --shadow: 0 0 calc(var(--blur) + 5px) calc(var(--spread) + 3px)
-    rgba(254, 241, 215, 0.7);
+  --shadow: 0 0 calc(var(--blur) + 5px) calc(var(--spread) + 3px) rgba(254, 241, 215, 0.7);
   box-shadow: var(--shadow);
 }

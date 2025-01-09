@@ -15,20 +15,13 @@ export default function ContactButton() {
 
   return (
     <div className="main-container">
-      <div
-        className={`popover ${isOpen ? "opened" : "closed"}`}
-        onTransitionEnd={() => handleClose}
-      >
+      <div className={`popover ${isOpen ? "opened" : "closed"}`} onTransitionEnd={() => handleClose}>
         <span onClick={handleClose} className="close">
           <p className="x">&times;</p>
         </span>
-        <p className="CTA">Hubung kami di sini!</p>
+        <p className="CTA">Hubungi kami di sini!</p>
       </div>
-      <a
-        href="https://wa.me/6282247433645"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://wa.me/6282247433645" target="_blank" rel="noopener noreferrer">
         <div className="kontak-container">
           <div className="float-button">
             <img src={telephone} />

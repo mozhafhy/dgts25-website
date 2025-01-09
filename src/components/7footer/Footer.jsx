@@ -16,47 +16,27 @@ export default function Footer() {
                 <div className="row d-flex ">
                   <p className="h5">Social Media</p>
                 </div>
-                <a
-                  href="https://whatsapp.com/channel/0029Vb1YwEu1NCrcGwNjIE0Q"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-whatsapp"/>
+                <a href="https://whatsapp.com/channel/0029Vb1YwEu1NCrcGwNjIE0Q" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <i className="bi bi-whatsapp" />
                 </a>
 
-                <a
-                  href="https://www.instagram.com/duacare?igsh=MXNoeXg2cHd0aDdocQ=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-instagram"/>
+                <a href="https://www.instagram.com/duacare?igsh=MXNoeXg2cHd0aDdocQ==" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <i className="bi bi-instagram" />
                 </a>
 
-                <a
-                  href="https://x.com/duacare"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-twitter-x"/>
+                <a href="https://x.com/duacare" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <i className="bi bi-twitter-x" />
                 </a>
               </div>
             </div>
           </div>
           <div className="col-6 d-flex justify-content-center align-items-center flex-column contactcol">
             <h2 className="contact">Contact Person</h2>
-            <a
-              href="https://wa.me/6282247433645"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://wa.me/6282247433645" target="_blank" rel="noopener noreferrer" className="contacttext">
               <p className="contacttext"> +62 822-4743-3645 (Riki Nanda)</p>
             </a>
 
-            <a
-              href="https://wa.me/6282231000810"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://wa.me/6282231000810" target="_blank" rel="noopener noreferrer" className="contacttext">
               <p className="contacttext"> +62 822-3100-0810 (Mandaluna)</p>
             </a>
           </div>

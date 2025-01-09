@@ -16,10 +16,10 @@
 /* ! Logo DGTS */
 #logos {
   --logo-gap: clamp(6px, 1vw, 12px);
-
   display: flex;
   gap: var(--logo-gap);
   align-items: center;
+  border-radius: 10px;
 }
 .logo {
   --size: clamp(1.5rem, 5vw, 2rem);
