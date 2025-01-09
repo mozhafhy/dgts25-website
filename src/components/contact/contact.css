@@ -26,15 +26,19 @@
 
 .popover {
   position: relative;
+  background: var(--def-light);
   color: var(--def-black);
+
   display: flex;
   flex-direction: column;
+  border-radius: 10px 10px 0 10px;
+
   margin-bottom: 6px;
   width: max-content;
   bottom: var(--size);
-  border: 2px solid var(--def-black);
+  border: 2px solid var(--secondary);
 
-  animation: fade-in 500ms;
+  animation: fade-in 1000ms;
 
   box-shadow: var(--def-shadow);
 
@@ -58,9 +62,9 @@
 
 .close {
   position: relative;
-  background: var(--def-black);
+  background: var(--secondary);
   width: 100%;
-  color: white;
+  color: var(--def-light);
   text-align: right;
 
   border-radius: 5px 5px 0 0;
@@ -72,9 +76,10 @@
 }
 .closed {
   opacity: 0;
-  transition: all 250ms ease;
+  transition: all 300ms ease;
 }
 
+/* ! Contact button */
 .kontak-container .float-button {
   --spread: clamp(1px, 0.5vw, 2px);
   --blur: clamp(7px, 1vw, 14px);

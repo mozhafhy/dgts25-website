@@ -1,23 +1,26 @@
-.divisi {
-  /* border: 1px solid; */
-  width: 100%;
+:root {
+  --main-img-size: clamp(120px, 22.5vw, 180px);
 }
 
+/* .main-divisi-container {
+  border: 1px solid;
+  width: 100%;
+} */
+
 /* ! Divisi container */
-._divisi {
+.head {
   --item-gap: clamp(1rem, 2.5vw, 2rem);
-  --size: clamp(120px, 22.5vw, 180px);
 
   /* ! Activate this to show the bounding box */
   position: relative;
-  min-height: var(--size);
+  min-height: var(--main-img-size);
   display: flex;
   flex-direction: row;
   gap: var(--item-gap);
 
   & .foto-co {
-    width: var(--size);
-    height: var(--size);
+    width: var(--main-img-size);
+    height: var(--main-img-size);
     object-fit: cover;
     border-radius: 50%;
     box-shadow: var(--def-shadow);
@@ -67,6 +70,7 @@
         border: var(--border) solid var(--border-col);
 
         z-index: -1;
+        animation: fade-in 500ms;
       }
 
       & .pp:not(:first-child) {
@@ -88,6 +92,7 @@
         margin-left: var(--overlap);
 
         cursor: pointer;
+        animation: fade-in 300ms;
       }
       & .remain-open-true {
         height: var(--size);
@@ -102,24 +107,32 @@
         border-radius: 50%;
         border: var(--border) solid var(--border-col);
         cursor: pointer;
+
+        transition: all 500ms ease;
       }
     }
   }
 }
-.divisi:nth-child(odd) {
+
+.main-divisi-container:nth-child(odd) {
   /* border: 1px solid grey; */
   justify-content: flex-start;
 }
-.divisi:nth-child(even) {
+.main-divisi-container:nth-child(even) {
   /* border: 1px solid grey; */
-  & ._divisi {
+  & .head {
     display: flex;
     justify-content: space-between;
   }
 }
 
+.staff-container {
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
 /* ! All staff */
-.all-staff {
+.container-content {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -137,6 +150,8 @@
     border: 2px solid var(--def-black);
 
     z-index: -1;
+
+    animation: fade-in 300ms;
   }
 }
 
@@ -144,7 +159,7 @@
 .more-img {
   --font-sz: clamp(1rem, 3vw, 1.5rem);
   --line-hg: clamp(1.5rem, 4vw, 2rem);
-  
+
   display: flex;
   align-items: center;
   column-gap: 5px;
@@ -153,5 +168,14 @@
     font-size: var(--font-sz);
     line-height: var(--line-hg);
     font-weight: bold;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
   }
 }
