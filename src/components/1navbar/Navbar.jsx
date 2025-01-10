@@ -2,13 +2,31 @@
 import "./Navbar.css";
 import sponsor from "../../assets/typography.svg";
 import dgts from "../../assets/logosponsor22.png";
-import dgts2 from "../../assets/logosponsor1.png";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // ! Icon dropdown
 const dropdown = (
-  <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="10"
+    height="6"
+    viewBox="0 0 10 6"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#ffffff" />
+  </svg>
+);
+
+// ! Pembatas antara logo DGTS dan sponsor utama
+const width = "clamp(5px, 1vw, 7px)",
+  height = "clamp(60px, 12vw, 75px)";
+const separator = (
+  <svg
+    className="separator"
+    width={`calc(${width} / 2)`}
+    height={`calc(${height} / 2)`}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line x1="0" y1="0" x2="0" y2={height} stroke="white" strokeWidth={width} />
   </svg>
 );
 
@@ -17,11 +35,37 @@ export default function Navbar() {
   return (
     <Nav>
       <NavItem item="Menu" isDropdown={true}>
-        <DropdownMenu />
-        {/* href ada di bawah sendiri */}
+        <DropdownItem
+          key="0"
+          id="0"
+          konten="Roadshow"
+          href="https://taplink.cc/roadshowdgts25"
+        />
+        <DropdownItem
+          key="1"
+          id="1"
+          konten="Bedah Jurusan"
+          href="https://taplink.cc/bedahjurusandgts25"
+        />
+        <DropdownItem
+          key="2"
+          id="2"
+          konten="Talkshow"
+          href="https://taplink.cc/talkshowdgts25"
+        />
+        <DropdownItem
+          key="3"
+          id="3"
+          konten="Campus Expo"
+          href="https://taplink.cc/campusexpodgts25"
+        />
       </NavItem>
+
       <NavItem item="Tiket" href="/" />
-      <NavItem item="Talent Mapping" href="https://www.16personalities.com/id/tes-kepribadian" />
+      <NavItem
+        item="Talent Mapping"
+        href="https://www.16personalities.com/id/tes-kepribadian"
+      />
     </Nav>
   );
 }
@@ -30,9 +74,9 @@ export default function Navbar() {
 function Nav(props) {
   return (
     <nav className="navbar-container">
-      <div id="logos">
+      <div className="logos">
         <img className="logo sponsor" src={sponsor} />
-        <h2>|</h2>
+        {separator}
         <img className="logo dgts" src={dgts} style={{ borderRadius: "5px" }} />
       </div>
       <ul className="opsi-container">{props.children}</ul>
@@ -42,39 +86,75 @@ function Nav(props) {
 
 // ! Nav item
 function NavItem(props) {
-  const [open, setOpen] = useState(false);
-  const ids = props.isDropdown ? (open ? "active" : "is-dropdown") : "opsi-item";
+  let [open, setOpen] = useState(false);
+
+  const ids = props.isDropdown
+    ? open
+      ? "active"
+      : "is-dropdown"
+    : "opsi-item";
+
+  let [height, setHeight] = useState();
+  let ref = useRef();
+
+  let handleClick = (e) => {
+    e.preventDefault();
+    setOpen((open) => !open);
+    setHeight(ref.current.clientHeight);
+  };
+
+  // ! Click outside handler
+  useEffect(() => {
+    function handleClickOutside(event) {
+      let clickLoc =
+        event.target.nodeName !== "BUTTON" &&
+        event.target.nodeName !== "svg" &&
+        event.target.nodeName !== "path" &&
+        event.target.nodeName !== "SPAN";
+
+      if (ref.current && clickLoc && open) {
+        setOpen(!open);
+      }
+
+      // console.log(ref.current && event.target.id !== "active" && open);
+    }
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
+
+  let currHeight = open ? height : 0;
 
   return (
     <li>
       <a href={props.href} target="_blank" rel="noopener noreferrer">
-        <button id={ids} onClick={props.isDropdown ? () => setOpen(!open) : null}>
+        <button className={ids} onClick={props.isDropdown ? handleClick : null}>
           <span className="h6">{props.item}</span>
           {/* Kalo dia dropdown, kasi icon dropdown di sebelahnya */}
           {props.isDropdown ? dropdown : null}
         </button>
-        {open && props.children}
       </a>
+      <div className="dropdown" style={{ height: currHeight + "px" }}>
+        <div ref={ref}>{props.children}</div>
+      </div>
     </li>
   );
 }
 
 // ! Dropdown menu
-function DropdownMenu() {
-  function DropdownItem(props) {
-    return (
-      <a href={props.href} target="_blank" className="dropdown-item" rel="noopener noreferrer">
-        {props.children}
-      </a>
-    );
-  }
-
+function DropdownItem(props) {
   return (
-    <div className="dropdown">
-      <DropdownItem href="https://taplink.cc/roadshowdgts25">Roadshow</DropdownItem>
-      <DropdownItem href="https://taplink.cc/bedahjurusandgts25">Bedah Jurusan</DropdownItem>
-      <DropdownItem href="https://taplink.cc/talkshowdgts25">Talkshow</DropdownItem>
-      <DropdownItem href="https://taplink.cc/campusexpodgts25">Campus Expo</DropdownItem>
-    </div>
+    <a
+      key={props.id}
+      href={props.href}
+      target="_blank"
+      className="dropdown-item"
+      rel="noopener noreferrer"
+    >
+      {props.konten}
+    </a>
   );
 }

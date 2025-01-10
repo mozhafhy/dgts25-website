@@ -52,7 +52,6 @@ export default function Sie(props) {
               <div className="more-img">
                 <div
                   className={`remain-open-${isOpen}`}
-                  onTransitionEnd={isOpen}
                   onClick={toggle}
                 >
                   {!isOpen ? "+" + remain : <i className="bi bi-x"></i>}

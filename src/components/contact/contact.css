@@ -11,7 +11,7 @@
 }
 
 .main-container {
-  /* border: 1px solid; */
+  /* border: 1px solid lime; */
 
   position: fixed;
   width: fit-content;
@@ -20,7 +20,7 @@
   bottom: 0;
   right: 0;
 
-  margin: 0 1rem 1rem 0;
+  margin: 0 1.5rem 1rem 0;
   z-index: 100;
 }
 
@@ -36,7 +36,7 @@
   margin-bottom: 6px;
   width: max-content;
   bottom: var(--size);
-  border: 2px solid var(--def-black);
+  border: 2px solid var(--secondary);
 
   animation: fade-in 1000ms;
 
@@ -62,7 +62,7 @@
 
 .close {
   position: relative;
-  background: var(--def-black);
+  background: var(--secondary);
   width: 100%;
   color: var(--def-light);
   text-align: right;

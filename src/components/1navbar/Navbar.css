@@ -13,8 +13,8 @@
   z-index: 1000;
 }
 
-/* ! Logo DGTS */
-#logos {
+/* ! Logo DGTS dan sponsor utama */
+.logos {
   --logo-gap: clamp(6px, 1vw, 12px);
   display: flex;
   gap: var(--logo-gap);
@@ -26,7 +26,7 @@
   height: var(--size);
 }
 
-/* ! Style opsi utama (presensi, tiket, etc.) */
+/* ! Style opsi utama (menu, tiket, etc.) */
 .opsi-container {
   margin-bottom: 0;
   max-width: 100%;
@@ -35,13 +35,13 @@
   align-items: center;
   justify-items: flex-end;
 }
-#opsi-item {
+.opsi-item {
   padding: 0 0.5rem;
   background: none;
   color: var(--def-light);
   height: var(--nav-heigth);
 }
-#is-dropdown {
+.is-dropdown {
   height: fit-content;
   padding: 5px 0.5rem;
   border-radius: 5px;
@@ -58,8 +58,8 @@
     fill: var(--def-black);
   }
 }
-#opsi-item:hover,
-#is-dropdown:hover {
+.opsi-item:hover,
+.is-dropdown:hover {
   height: var(--nav-heigth);
   padding: 0 0.5rem;
   background-color: var(--def-light);
@@ -80,7 +80,7 @@
     fill: var(--def-black);
   }
 }
-#active {
+.active {
   height: var(--nav-heigth);
   padding: 0 0.5rem;
   background-color: var(--def-light);
@@ -111,23 +111,15 @@
   line-height: var(--line-hg);
 }
 
-/* ! Style utama dropdown --> function DropdownMenu */
+/* ! Style utama dropdown */
 .dropdown {
   position: absolute;
   top: var(--nav-heigth);
-  width: 100%;
+  /* width: 100%; */
   background: var(--primary);
   overflow: hidden;
 
-  animation: move 300ms ease;
-}
-@keyframes move {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
+  transition: all 500ms ease;
 }
 
 /* ! Style item dropdown --> function DropdownItem */
@@ -137,7 +129,7 @@
   height: 2rem;
   display: flex;
   align-items: center;
-  padding: var(--padding) 10px;
+  padding: var(--padding) 30px var(--padding) 10px;
   cursor: pointer;
 }
 .dropdown-item:hover {
