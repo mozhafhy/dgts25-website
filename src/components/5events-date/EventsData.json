@@ -1,0 +1,42 @@
+[
+  {
+    "idx": 0,
+    "event": "Roadshow",
+    "motto": "Explore Your Path, Ignite Your Future",
+    "foto": "/images-event/roadshow.JPG",
+    "color": "red-ligth",
+    "desc": "Roadshow to Duacare Goes To School 2025 merupakan permulaan dari serangkaian kegiatan Duacare Goes To School 2025 yang bertujuan untuk memberikan pengenalan serta pemahaman mengenai Duacare dan DGTS itu sendiri.",
+    "date": ["17 Januari 2025", "(09.30 - 14.15 WIB)"],
+    "place": "Ruang kelas SMA Negeri 2 Lumajang"
+  },
+  {
+    "idx": 1,
+    "event": "Talkshow",
+    "motto": "Dare to Dream, Dare to Achieve",
+    "foto": "/images-event/talkshow.JPG",
+    "color": "blue-ligth",
+    "desc": "Talkshow merupakan kegiatan yang diadakan dalam rangkaian kegiatan DGTS 2025 berupa perbincangan atau diskusi bersama pemateri (alumni SMADA) yang diundang mengenai topik tertentu.",
+    "date": ["24 Januari 202", "(12.45 - 16.15 WIB)"],
+    "place": "Pinandhita Hall SMA Negeri 2 Lumajang"
+  },
+  {
+    "idx": 2,
+    "event": "Bedah Jurusan",
+    "motto": "Know Your dreams, Shape Your Mission, and Decide Your Major",
+    "foto": "/images-event/bedah_jurusan.JPG",
+    "color": "red-dark",
+    "desc": "Bedah Jurusan merupakan rangkaian acara Duacare Goes To School 2025 yang bertujuan untuk membantu siswa-siswi kelas XII SMA Negeri 2 Lumajang memahami berbagai jurusan di perguruan tinggi.",
+    "date": ["25 Januari 2025", "(06.45 - 12.00 WIB)"],
+    "place": "Ruang kelas SMA Negeri 2 Lumajang"
+  },
+  {
+    "idx": 3,
+    "event": "Campus Expo",
+    "motto": "Explore Possibilities, Embrace Opportunities",
+    "foto": "/images-event/campex.JPG",
+    "color": "blue-dark",
+    "desc": "Campus Expo merupakan rangkaian acara Duacare Goes To School 2025 yang bertujuan untuk memberikan informasi mengenai berbagai perguruan tinggi yang ada di Indonesia kepada siswa-siswi SMA Negeri 2 Lumajang.",
+    "date": ["25 - 26 Januari 2025", "(12.00 - 21.00 WIB)"],
+    "place": "Pinandhita Hall SMA Negeri 2 Lumajang"
+  }
+]

@@ -1,0 +1,17 @@
+/* ! Main container */
+.divisi-container {
+  --gap-row: clamp(2.25rem, 5vw, 3rem);
+  --gap-col: clamp(5rem, 12.5vw, 10rem);
+
+  /* border: 1px solid; */
+  width: fit-content;
+  display: grid;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  gap: var(--gap-row) var(--gap-col);
+}
+@media screen and (min-width: 1280px) {
+  .divisi-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

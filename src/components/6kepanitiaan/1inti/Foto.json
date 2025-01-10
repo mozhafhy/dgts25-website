@@ -1,0 +1,30 @@
+[
+  {
+    "key": 0,
+    "jabatan": "anggota",
+    "foto": "img-inti/Salsabila Zamzama_Sekre 1.jpg",
+    "nama": "Salsabila Z. Saharani",
+    "posisi": "Sekretaris 1"
+  },
+  {
+    "key": 1,
+    "jabatan": "anggota",
+    "foto": "img-inti/Aqila Mandaluna_Sekre 2.JPG",
+    "nama": "Aqila Mandaluna I.",
+    "posisi": "Sekretaris 2"
+  },
+  {
+    "key": 2,
+    "jabatan": "anggota",
+    "foto": "img-inti/Mahanani.jpg",
+    "nama": "Mahanani Putri N.",
+    "posisi": "Bendahara 1"
+  },
+  {
+    "key": 3,
+    "jabatan": "anggota",
+    "foto": "img-inti/Anggun Putri_Bendahara 2.jpg",
+    "nama": "Anggun Putri K.",
+    "posisi": "Bendahara 2"
+  }
+]
