@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* href ada di bawah sendiri */}
       </NavItem>
       <NavItem item="Tiket" href="/" />
-      <NavItem item="Talent Mapping" href="/" />
+      <NavItem item="Talent Mapping" href="https://www.16personalities.com/id/tes-kepribadian" />
     </Nav>
   );
 }
@@ -71,10 +71,10 @@ function DropdownMenu() {
 
   return (
     <div className="dropdown">
-      <DropdownItem href="/">Roadshow</DropdownItem>
-      <DropdownItem href="/">Bedah Jurusan</DropdownItem>
-      <DropdownItem href="/">Talkshow</DropdownItem>
-      <DropdownItem href="/">Campus Expo</DropdownItem>
+      <DropdownItem href="https://taplink.cc/roadshowdgts25">Roadshow</DropdownItem>
+      <DropdownItem href="https://taplink.cc/bedahjurusandgts25">Bedah Jurusan</DropdownItem>
+      <DropdownItem href="https://taplink.cc/talkshowdgts25">Talkshow</DropdownItem>
+      <DropdownItem href="https://taplink.cc/campusexpodgts25">Campus Expo</DropdownItem>
     </div>
   );
 }
