@@ -99,6 +99,7 @@ function NavItem(props) {
   useEffect(() => {
     function handleClickOutside(event) {
       let clickLoc =
+        !ref.current.contains(event.target) &&
         event.target.nodeName !== "BUTTON" &&
         event.target.nodeName !== "svg" &&
         event.target.nodeName !== "path" &&
