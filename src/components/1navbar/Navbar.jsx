@@ -88,19 +88,11 @@ function Nav(props) {
 function NavItem(props) {
   let [open, setOpen] = useState(false);
 
-  const ids = props.isDropdown
-    ? open
-      ? "active"
-      : "is-dropdown"
-    : "opsi-item";
-
-  let [height, setHeight] = useState();
   let ref = useRef();
 
   let handleClick = (e) => {
     e.preventDefault();
     setOpen((open) => !open);
-    setHeight(ref.current.clientHeight);
   };
 
   // ! Click outside handler
@@ -113,7 +105,7 @@ function NavItem(props) {
         event.target.nodeName !== "SPAN";
 
       if (ref.current && clickLoc && open) {
-        setOpen(!open);
+        setOpen((open) => !open);
       }
 
       // console.log(ref.current && event.target.id !== "active" && open);
@@ -126,20 +118,32 @@ function NavItem(props) {
     };
   });
 
-  let currHeight = open ? height : 0;
+  let show = open ? 1 : 0;
+  let cursor = open ? "auto" : "none";
+
+  const ids = props.isDropdown
+    ? open
+      ? "active"
+      : "is-dropdown"
+    : "opsi-item";
 
   return (
-    <li>
+    <li className="navbar-item">
       <a href={props.href} target="_blank" rel="noopener noreferrer">
         <button className={ids} onClick={props.isDropdown ? handleClick : null}>
-          <span className="h6">{props.item}</span>
+          <span className="menu">{props.item}</span>
           {/* Kalo dia dropdown, kasi icon dropdown di sebelahnya */}
           {props.isDropdown ? dropdown : null}
         </button>
       </a>
-      <div className="dropdown" style={{ height: currHeight + "px" }}>
-        <div ref={ref}>{props.children}</div>
-      </div>
+      {props.isDropdown && (
+        <div
+          className="dropdown"
+          style={{ opacity: show, pointerEvents: cursor }}
+        >
+          <div ref={ref}>{props.children}</div>
+        </div>
+      )}
     </li>
   );
 }

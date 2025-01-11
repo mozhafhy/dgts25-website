@@ -1,6 +1,7 @@
 /* ! Style basis navbar --> function Navbar*/
 .navbar-container {
   height: var(--nav-heigth);
+  width: 100%;
   position: sticky;
   top: 0;
   background-color: var(--def-black);
@@ -30,24 +31,31 @@
 .opsi-container {
   margin-bottom: 0;
   max-width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-items: flex-end;
 }
 .opsi-item {
+  --height: clamp(1.75rem, 5vw, 2rem);
+
+  height: var(--height);
   padding: 0 0.5rem;
   background: none;
   color: var(--def-light);
-  height: var(--nav-heigth);
+  
+  transition: all 300ms ease;
 }
 .is-dropdown {
-  height: fit-content;
+  --height: clamp(1.75rem, 5vw, 2rem);
+
+  height: var(--height);
   padding: 5px 0.5rem;
   border-radius: 5px;
   background: white;
   color: var(--def-black);
   margin-right: 0.5rem;
+
+  transition: all 300ms ease;
 
   & > svg {
     margin-left: 5px;
@@ -67,7 +75,9 @@
   border: none;
   border-radius: 0;
 
-  & .h6 {
+  transition: all 300ms ease;
+
+  & .menu {
     font-weight: bold;
   }
 
@@ -89,7 +99,9 @@
   border-radius: 0;
   margin-right: 0.5rem;
 
-  & .h6 {
+  transition: all 300ms ease;
+
+  & .menu {
     font-weight: bold;
   }
 
@@ -103,7 +115,7 @@
   }
 }
 
-.h6 {
+.menu {
   --font-sz: clamp(12px, 1.5vw, 16px);
   --line-hg: clamp(16px, 3vw, 24px);
 
@@ -115,21 +127,26 @@
 .dropdown {
   position: absolute;
   top: var(--nav-heigth);
-  /* width: 100%; */
   background: var(--primary);
   overflow: hidden;
 
-  transition: all 500ms ease;
+  transition: all 400ms ease;
 }
 
 /* ! Style item dropdown --> function DropdownItem */
 .dropdown-item {
-  --padding: clamp(12px, 3vw, 24px);
+  --padding-up: clamp(12px, 3vw, 24px);
+  --padding-rigth: clamp(20px, 2vw, 40px);
+  --padding-bottom: clamp(12px, 3vw, 24px);
+  --padding-left: clamp(5px, 1vw, 10px);
+
+  --padding: var(--padding-up) var(--padding-rigth) var(--padding-bottom)
+    var(--padding-left);
 
   height: 2rem;
   display: flex;
   align-items: center;
-  padding: var(--padding) 30px var(--padding) 10px;
+  padding: var(--padding);
   cursor: pointer;
 }
 .dropdown-item:hover {
