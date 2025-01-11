@@ -12,7 +12,7 @@ const defultEnd = {
   translateY: 0,
   scale: 1,
   opacity: 1,
-  transition: { duration: 0.75 },
+  transition: { duration: 0.3 },
   filter: "blur(0)",
 };
 
