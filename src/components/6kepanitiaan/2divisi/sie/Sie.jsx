@@ -21,6 +21,19 @@ export default function Sie(props) {
   const length = fotos.length;
   const remain = length - 4;
 
+  const styleHide = {
+    opacity: 0,
+    fontSize: 0,
+    height: 0,
+  };
+  const styleShow = {
+    opacity: 1,
+    fontSize: "clamp(var(--txt-xs), 2vw, var(--txt-base))",
+    height: "clamp(var(--lh-xs), 3vw, var(--lh-base))",
+  };
+
+  let style = isOpen ? styleShow : styleHide;
+
   return (
     <div key={props.id} className="main-divisi-container">
       <div className="head">
@@ -31,9 +44,9 @@ export default function Sie(props) {
           <div className="deskripsi-div">
             <p className="nama-divisi">{props.divisi}</p>
             <p className="deskripsi-divisi">{props.deskripsi}</p>
-            {isOpen && (
-              <p className="deskripsi-divisi co-name">CO: {props.namaCO}</p>
-            )}
+            <p className="co-name" style={style}>
+              CO: {props.namaCO}
+            </p>
           </div>
           <div className="pp-container">
             {!isOpen &&
@@ -49,11 +62,8 @@ export default function Sie(props) {
                 ))}
 
             {remain > 0 && (
-              <div className="more-img">
-                <div
-                  className={`remain-open-${isOpen}`}
-                  onClick={toggle}
-                >
+              <div className="this-is-us">
+                <div className={`remain-open-${isOpen}`} onClick={toggle}>
                   {!isOpen ? "+" + remain : <i className="bi bi-x"></i>}
                 </div>
                 {isOpen && <span>This is us!</span>}
