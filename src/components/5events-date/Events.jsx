@@ -19,9 +19,9 @@ const decor = (
 );
 
 // ! Main function
-export default function Events() {
+export default function Events({ id }) {
   return (
-    <div className="events-container">
+    <div key={id} id={id} className="events-container">
       <h1 className="text-center">Events and Date</h1>
 
       <div className="cards-carousel">

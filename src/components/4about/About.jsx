@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./About.css";
 
 const path = "/about-images/";
@@ -16,9 +17,9 @@ const images = [
   `${path}12.png`,
 ];
 
-export default function About() {
+export default function About({ id }) {
   return (
-    <div className="profile-container shadow-lg">
+    <div key={id} id={id} className="profile-container shadow-lg">
       <div className="about-container">
         <div className="about">
           <h1 id="title" className="abt">
