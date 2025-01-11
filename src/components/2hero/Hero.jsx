@@ -1,5 +1,6 @@
 import "./hero.css";
 import hero from "../../assets/Frame 15.png";
+import { color } from "framer-motion";
 
 const arrow = (
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
@@ -15,7 +16,8 @@ export default function Hero() {
 
       {/* //! Title hero */}
       <div className="position-absolute text-white hero-text">
-        <h1 className="fw-bold display-2 typing">Explore Your Path, Ignite Your Future</h1>
+        <h1 className="fw-bold display-2">"Explore Your Path, Ignite Your Future"</h1>
+        <h2 className="fw-bold display-4">DGTS-25</h2>
 
         {/* // !CTA */}
         <a href="/" target="_blank" rel="noopener noreferrer">
