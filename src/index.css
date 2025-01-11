@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
 body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-* {
   font-family: "Roboto";
+  min-width: 385px;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -17,6 +14,8 @@ body {
   --primary: hsl(203, 38%, 57%);
   --accent: hsl(340, 55%, 22%);
   --secondary: hsl(352, 76%, 35%);
+
+  --gap: clamp(2.5rem, 6vw, 5rem);
 
   /* ? Linear Grad */
   --talkshow-child: linear-gradient(90deg, var(--accent) 25%, var(--def-black) 100%);

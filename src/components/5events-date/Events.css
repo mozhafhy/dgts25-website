@@ -1,7 +1,7 @@
 /* ! Some variables */
 :root {
   /* --card-width: clamp(min-content, 60vw, max-content); */
-  --card-height: clamp(475px, 90vw, 550px);
+  --card-height: clamp(475px, 90vw, 535px);
   --card-gap: clamp(24px, 3vw, 36px);
   --item-gap: clamp(24px, 5vw, 36px);
   --decor-width: clamp(200px, 40vw, 250px);
@@ -10,10 +10,10 @@
 
 /* ! Card carousel styling */
 .cards-carousel {
+  --pad-top: clamp(12px, 2vw, 20px);
   /* border: 1px solid; */
   height: fit-content;
-  margin-top: 1.5rem;
-  padding: 12px 1.25rem;
+  padding: var(--pad-top) clamp(12px, 3vw, 20px);
   display: flex;
   gap: var(--card-gap);
   overflow-x: auto;

@@ -1,15 +1,20 @@
 /* ! Style basis navbar --> function Navbar*/
 .navbar-container {
+  --pad-rght-lft: clamp(12px, 2vw, 20px);
+
   height: var(--nav-heigth);
   width: 100%;
+  background-color: var(--def-black);
+  color: var(--def-light);
+  padding: 0 var(--pad-rght-lft);
+
   position: sticky;
   top: 0;
-  background-color: var(--def-black);
-  justify-content: space-between;
-  color: var(--def-light);
+
   display: flex;
-  padding: 0 1.25rem;
+  justify-content: space-between;
   align-items: center;
+
   box-shadow: var(--def-shadow);
   z-index: 1000;
 }
@@ -29,98 +34,104 @@
 
 /* ! Style opsi utama (menu, tiket, etc.) */
 .opsi-container {
-  margin-bottom: 0;
+  --padd: clamp(5px, 1vw, 8px);
+
   max-width: 100%;
+
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-items: flex-end;
-}
-.opsi-item {
-  --height: clamp(1.75rem, 5vw, 2rem);
 
-  height: var(--height);
-  padding: 0 0.5rem;
-  background: none;
-  color: var(--def-light);
-  
-  transition: all 300ms ease;
-}
-.is-dropdown {
-  --height: clamp(1.75rem, 5vw, 2rem);
+  & .opsi-item {
+    --height: clamp(1.75rem, 5vw, 2rem);
 
-  height: var(--height);
-  padding: 5px 0.5rem;
-  border-radius: 5px;
-  background: white;
-  color: var(--def-black);
-  margin-right: 0.5rem;
+    height: var(--height);
+    padding: 0 var(--padd);
+    background: none;
+    color: var(--def-light);
 
-  transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  & .is-dropdown {
+    --height: clamp(1.75rem, 5vw, 2rem);
 
-  & > svg {
-    margin-left: 5px;
-    margin-bottom: 0px;
+    height: var(--height);
+    padding: 5px var(--padd);
+    border-radius: 5px;
+    background: white;
+    color: var(--def-black);
+    margin-right: var(--padd);
+
+    transition: all 300ms ease;
+
+    & > svg {
+      margin-left: 5px;
+      margin-bottom: 0px;
+    }
+
+    & > svg path {
+      fill: var(--def-black);
+    }
   }
 
-  & > svg path {
-    fill: var(--def-black);
-  }
-}
-.opsi-item:hover,
-.is-dropdown:hover {
-  height: var(--nav-heigth);
-  padding: 0 0.5rem;
-  background-color: var(--def-light);
-  color: var(--def-black);
-  border: none;
-  border-radius: 0;
+  & .opsi-item:hover,
+  & .is-dropdown:hover {
+    height: var(--nav-heigth);
+    padding: 0 var(--padd);
+    background-color: var(--def-light);
+    color: var(--def-black);
+    border: none;
+    border-radius: 0;
 
-  transition: all 300ms ease;
+    transition: all 300ms ease;
+
+    & .menu {
+      font-weight: bold;
+    }
+
+    & > svg {
+      margin-left: 5px;
+      margin-bottom: 0px;
+    }
+
+    & > svg path {
+      fill: var(--def-black);
+    }
+  }
+
+  & .active {
+    height: var(--nav-heigth);
+    padding: 0 var(--padd);
+    background-color: var(--def-light);
+    color: var(--def-black);
+    border: none;
+    border-radius: 0;
+    margin-right: var(--padd);
+
+    transition: all 300ms ease;
+
+    & .menu {
+      font-weight: bold;
+    }
+
+    & > svg {
+      margin-left: 5px;
+      margin-bottom: 0px;
+    }
+
+    & > svg path {
+      fill: var(--def-black);
+    }
+  }
 
   & .menu {
-    font-weight: bold;
+    --font-sz: clamp(12px, 1.5vw, 16px);
+    --line-hg: clamp(16px, 3vw, 24px);
+
+    font-size: var(--font-sz);
+    line-height: var(--line-hg);
   }
-
-  & > svg {
-    margin-left: 5px;
-    margin-bottom: 0px;
-  }
-
-  & > svg path {
-    fill: var(--def-black);
-  }
-}
-.active {
-  height: var(--nav-heigth);
-  padding: 0 0.5rem;
-  background-color: var(--def-light);
-  color: var(--def-black);
-  border: none;
-  border-radius: 0;
-  margin-right: 0.5rem;
-
-  transition: all 300ms ease;
-
-  & .menu {
-    font-weight: bold;
-  }
-
-  & > svg {
-    margin-left: 5px;
-    margin-bottom: 0px;
-  }
-
-  & > svg path {
-    fill: var(--def-black);
-  }
-}
-
-.menu {
-  --font-sz: clamp(12px, 1.5vw, 16px);
-  --line-hg: clamp(16px, 3vw, 24px);
-
-  font-size: var(--font-sz);
-  line-height: var(--line-hg);
 }
 
 /* ! Style utama dropdown */

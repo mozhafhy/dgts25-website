@@ -99,17 +99,21 @@ function NavItem(props) {
   useEffect(() => {
     function handleClickOutside(event) {
       let clickLoc =
-        !ref.current.contains(event.target) &&
         event.target.nodeName !== "BUTTON" &&
         event.target.nodeName !== "svg" &&
         event.target.nodeName !== "path" &&
         event.target.nodeName !== "SPAN";
 
-      if (ref.current && clickLoc && open) {
+      if (
+        ref.current &&
+        !ref.current.contains(event.target) &&
+        clickLoc &&
+        open
+      ) {
         setOpen((open) => !open);
       }
 
-      // console.log(ref.current && event.target.id !== "active" && open);
+      // ? console.log(event.target.parentElement.nodeName);
     }
     // Bind the event listener
     document.addEventListener("mousedown", handleClickOutside);

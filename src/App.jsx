@@ -1,5 +1,3 @@
-import "./App.css";
-
 import AOS from "./components/anim/AOS.jsx";
 import Navbar from "./components/1navbar/Navbar.jsx";
 import ContactButton from "./components/contact/contact.jsx";
