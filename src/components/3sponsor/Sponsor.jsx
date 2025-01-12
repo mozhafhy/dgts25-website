@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
-import logo from "../../assets/logosponsor3.png";
-import logo1 from "../../assets/logosponsor1.png";
-import logo2 from "../../assets/osismpk.png";
-import logo3 from "../../assets/VL.png";
+import sponsor from "../../assets/sponsor-full.png";
+import osis from "../../assets/osismpk.png";
+import vl from "../../assets/VL.png";
 
 import "./sponsor.css";
 export default function Sponsor({ id }) {
@@ -10,15 +9,9 @@ export default function Sponsor({ id }) {
     <div key={id} id={id} className="sponsor-cont">
       <div className="sponsor-info">Sponsor dan Media Partner</div>
       <div className="logo-row">
-        <img src={logo} alt="" />
-        <img src={logo1} alt="" />
-        <img src={logo} alt="" />
-        <img src={logo1} alt="" />
-        <img src={logo} alt="" />
-      </div>
-      <div className="logo-row2">
-        <img src={logo2} alt="" className="osismpk" />
-        <img src={logo3} alt="" />
+        <img src={vl} alt="" className="vl" />
+        <img src={sponsor} alt="" className="sponsor-full" />
+        <img src={osis} alt="" className="osismpk" />
       </div>
     </div>
   );

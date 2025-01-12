@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./Navbar.css";
 import sponsor from "../../assets/typography.svg";
-import dgts from "../../assets/logosponsor22.png";
+import dgts from "../../assets/sponsor-dwisata.png";
 import { useState, useRef, useEffect } from "react";
 
 // ! Icon dropdown

@@ -38,45 +38,37 @@
 .logo-row {
   /* border: 1px solid black; */
   display: flex;
-  justify-content: space-evenly;
-
-  margin-right: var(--gap);
-  margin-left: var(--gap);
-
-  /* gap: 10px; */
-}
-
-.logo-row img {
-  /* border: 1px solid black; */
-
-  width: min(15vw, 150px); /* Ukuran logo */
-  object-fit: contain;
-  background-color: transparent;
-}
-
-.logo-row2 {
-  /* border: 1px solid black; */
-  display: flex;
   justify-content: center;
 
   margin-right: var(--gap);
   margin-left: var(--gap);
 
-  gap: 30px;
+  gap: max(3.25rem, 10vw);
 }
 
-.logo-row2 .osismpk {
+.sponsor-full {
   /* border: 1px solid black; */
 
-  width: min(10vw, 80px); /* Ukuran logo */
+  width: min(40vw, 400px); /* Ukuran logo */
+  object-fit: contain;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.osismpk {
+  /* border: 1px solid black; */
+
+  width: min(5vw, 100px); /* Ukuran logo */
   object-fit: contain;
   background-color: transparent;
 }
 
-.logo-row2 img {
+.vl {
   /* border: 1px solid black; */
 
-  width: min(15vw, 120px); /* Ukuran logo */
+  width: min(17vw, 200px); /* Ukuran logo */
   object-fit: contain;
   background-color: transparent;
 }
+
+

@@ -31,7 +31,7 @@
   --border-rad: clamp(12px, 2.25vw, 24px);
 
   width: 100%;
-  height: 85dvh;
+  height: 85vh;
 
   object-fit: cover;
   object-position: center;
