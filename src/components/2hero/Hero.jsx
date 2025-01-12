@@ -1,5 +1,5 @@
 import "./hero.css";
-import hero from "../../assets/Frame 15.png";
+import hero from "../../assets/Frame 15.webp";
 import { color } from "framer-motion";
 
 const arrow = (
