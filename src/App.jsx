@@ -9,7 +9,12 @@ import Inti from "./components/6kepanitiaan/1inti/Inti.jsx";
 import Divisi from "./components/6kepanitiaan/2divisi/Divisi.jsx";
 import Footer from "./components/7footer/Footer.jsx";
 
-const components = [<Sponsor key={0} />, <About key={1} />, <Events key={2} />];
+const components = [
+  <Sponsor key={0} />,
+  <About key={1} />,
+  <Events key={2} />,
+  <Inti key={3} />,
+];
 
 function App() {
   return (
@@ -17,15 +22,13 @@ function App() {
       <Navbar />
       <ContactButton />
       <Hero />
+
       {components.map((component, id) => (
         <AOS key={id}>{component}</AOS>
       ))}
-      <Inti key={3} />
       <Divisi key={4} />
 
-      <AOS initial={{ opacity: 0 }} end={{ opacity: 1 }}>
-        <Footer />
-      </AOS>
+      <Footer />
     </div>
   );
 }

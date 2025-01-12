@@ -2,23 +2,11 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
-const defaultInit = {
-  opacity: 0,
-  scale: 0.8,
-  translateY: "-10%",
-};
-const defaultEnd = {
-  translateY: 0,
-  scale: 1,
-  opacity: 1,
-  transition: { duration: 0.2 },
-};
-
 export default function AOS({
   children,
   id,
-  initial = defaultInit,
-  end = defaultEnd,
+  initial = { opacity: 0, scale: 0.9, translateY: "-10%" },
+  end = { translateY: 0, scale: 1, opacity: 1, transition: { duration: 0.1 } },
 }) {
   const shouldReducedMotion = useReducedMotion();
   const ref = useRef(null);
