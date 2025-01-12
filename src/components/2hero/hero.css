@@ -1,10 +1,10 @@
 :root {
-  --padding: 20px;
+  --padding: clamp(12px, 1vw, 20px);
 }
 
 .container-fluid {
   position: relative;
-  padding: var(--padding);
+  padding: var(--padding) var(--padding) var(--gap) var(--padding);
   filter: saturate(1.75);
 }
 
@@ -31,7 +31,7 @@
   --border-rad: clamp(12px, 2.25vw, 24px);
 
   width: 100%;
-  height: 100dvh;
+  height: 85dvh;
 
   object-fit: cover;
   object-position: center;
@@ -43,12 +43,13 @@
 }
 
 .hero-text {
-  --top-pad: 17.5%;
+  --top-pad: 7rem;
+  --left-right: clamp(2rem, 3vw, 4rem);
 
   position: absolute;
   top: calc(var(--padding) + var(--top-pad));
-  left: 7.5%;
-  right: 7.5%;
+  left: var(--left-right);
+  right: var(--left-right);
 
   text-shadow: var(--def-shadow);
 }

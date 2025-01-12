@@ -1,9 +1,55 @@
-.logo-row {
+.sponsor-cont {
+  /* border: 1px solid limegreen; */
+  height: fit-content;
+
+  margin-bottom: var(--gap);
+
+  position: relative;
+}
+
+.sponsor-info {
+  --font-sz: clamp(var(--txt-2xl), 5vw, var(--txt-3xl));
+  --line-hg: clamp(var(--lh-2x), 7vw, var(--lh-3xl));
+  /* border: 1px solid black; */
+
+  opacity: 0;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 46, 71, 0.8);
+  color: var(--def-light);
+
+  font-size: var(--font-sz);
+  line-height: var(--line-hg);
+  font-weight: bold;
+
   display: flex;
-  gap: 10px; /* Jarak antar logo */
+  align-items: center;
+  justify-content: center;
+
+  transition: all 300ms ease;
+}
+.sponsor-info:hover {
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
+.logo-row {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-right: var(--gap);
+  margin-left: var(--gap);
+
+  /* gap: 10px; */
 }
 
 .logo-row img {
-  width: 80px; /* Ukuran logo */
+  /* border: 1px solid black; */
+
+  width: min(15vw, 150px); /* Ukuran logo */
+  object-fit: contain;
   background-color: transparent;
 }

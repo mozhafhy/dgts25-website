@@ -2,10 +2,11 @@
 .profile-container {
   --pad-left-right: clamp(1.25rem, 3vw, 2.5rem);
   --pad-top-bottom: clamp(0.75rem, 2vw, 1.5rem);
-  --gap: clamp(1rem, 3vw, 2rem);
+  --marg-left-right: clamp(12px, 3vw, 20px);
 
   background-color: var(--def-black);
-  margin: 2.25rem 1.25rem;
+  margin: 0 var(--marg-left-right);
+  margin-bottom: var(--gap);
   padding: var(--pad-top-bottom) var(--pad-left-right);
   display: flex;
   flex-direction: column;
