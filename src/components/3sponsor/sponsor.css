@@ -53,3 +53,30 @@
   object-fit: contain;
   background-color: transparent;
 }
+
+.logo-row2 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+
+  margin-right: var(--gap);
+  margin-left: var(--gap);
+
+  gap: 30px;
+}
+
+.logo-row2 .osismpk {
+  /* border: 1px solid black; */
+
+  width: min(10vw, 80px); /* Ukuran logo */
+  object-fit: contain;
+  background-color: transparent;
+}
+
+.logo-row2 img {
+  /* border: 1px solid black; */
+
+  width: min(15vw, 120px); /* Ukuran logo */
+  object-fit: contain;
+  background-color: transparent;
+}
