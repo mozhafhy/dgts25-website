@@ -4,16 +4,14 @@ import { useRef } from "react";
 
 const defaultInit = {
   opacity: 0,
-  scale: 0.9,
+  scale: 0.8,
   translateY: "-10%",
-  filter: "blur(5px)",
 };
 const defaultEnd = {
   translateY: 0,
   scale: 1,
   opacity: 1,
-  transition: { duration: 0.3 },
-  filter: "blur(0)",
+  transition: { duration: 0.2 },
 };
 
 export default function AOS({
@@ -28,13 +26,13 @@ export default function AOS({
   return (
     <div ref={ref} key={id} id={id}>
       <motion.div
-        // className="test"
-        initial={
+        className="animate"
+        initial={!shouldReducedMotion ? initial : { opacity: 0 }}
+        whileInView={
           !shouldReducedMotion
-            ? initial
-            : { opacity: 0, transform: { duration: 0.2 } }
+            ? end
+            : { opacity: 1, transform: { duration: 0.2 } }
         }
-        whileInView={!shouldReducedMotion ? end : { opacity: 1 }}
         viewport={{ root: ref }}
       >
         {children}

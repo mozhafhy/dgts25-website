@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./About.css";
+import AOS from "../anim/AOS.jsx";
 
 const path = "/about-images/";
 const images = [
@@ -50,7 +51,9 @@ export default function About({ id }) {
       </div>
       <div className="img-carousel">
         {images.map((img, key) => (
-          <img key={key} id="foto" src={img} />
+          <AOS key={key} initial={{ opacity: 0 }} end={{ opacity: 1 }}>
+            <img id="foto" src={img} />
+          </AOS>
         ))}
       </div>
     </div>

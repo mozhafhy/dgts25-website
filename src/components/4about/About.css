@@ -42,7 +42,7 @@
   --bottom: clamp(0.5rem, 1vw, 1.25rem);
   --border: clamp(5px, 1vw, 10px);
   --item-gap: clamp(1rem, 3vw, 2rem);
-  
+
   display: flex;
   gap: var(--item-gap);
 
@@ -51,8 +51,6 @@
   scrollbar-width: none;
 
   margin: var(--top) 0 var(--bottom) 0;
-  border-left: var(--border) solid var(--def-light);
-  border-right: var(--border) solid var(--def-light);
 
   filter: saturate(1.75) contrast(1.1) brightness(1.15);
 }
@@ -63,13 +61,4 @@
   width: var(--size);
   object-fit: cover;
   border: var(--border) solid var(--def-light);
-  
-  &:first-child {
-    border-left: none;
-  }
-
-  &:last-child {
-    border-right: none;
-  }
 }
-

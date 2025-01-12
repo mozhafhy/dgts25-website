@@ -18,9 +18,9 @@ export default function Inti({ id }) {
         />
       </AOS>
 
-      <AOS>
-        <div className="anggota-container">
-          {dataPanit.map((panit) => (
+      <div className="anggota-container">
+        {dataPanit.map((panit) => (
+          <AOS key={panit.key}>
             <Panitia
               key={panit.key}
               id={panit.key}
@@ -29,9 +29,9 @@ export default function Inti({ id }) {
               nama={panit.nama}
               posisi={panit.posisi}
             />
-          ))}
-        </div>
-      </AOS>
+          </AOS>
+        ))}
+      </div>
     </div>
   );
 }

@@ -10,13 +10,6 @@ import Divisi from "./components/6kepanitiaan/2divisi/Divisi.jsx";
 import Footer from "./components/7footer/Footer.jsx";
 
 const components = [<Sponsor key={0} />, <About key={1} />, <Events key={2} />];
-const footerInit = {
-  filter: "blur(5px)",
-};
-const footerEnd = {
-  transition: { duration: 0.3 },
-  filter: "blur(0)",
-}
 
 function App() {
   return (
@@ -30,7 +23,7 @@ function App() {
       <Inti key={3} />
       <Divisi key={4} />
 
-      <AOS initial={footerInit} end={footerEnd}>
+      <AOS initial={{ opacity: 0 }} end={{ opacity: 1 }}>
         <Footer />
       </AOS>
     </div>
