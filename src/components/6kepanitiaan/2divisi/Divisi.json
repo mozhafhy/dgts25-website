@@ -34,7 +34,7 @@
     "isOddChild": true,
     "fotoCO": "img-div/2Pendanaan/0.jpg",
     "namaCO": "Nayla Matsuda Saeko",
-    "divisi": "Pendanaan",
+    "divisi": "Sponsorship",
     "deskripsi": "Lagi Cari Uang",
     "foto": [
       {
@@ -126,6 +126,22 @@
       {
         "source": "img-div/3Kreatif/10.jpg",
         "nama": "Nif"
+      },
+      {
+        "source": "img-div/3Kreatif/11.jpg",
+        "nama": "Alfan"
+      },
+      {
+        "source": "img-div/3Kreatif/12.jpg",
+        "nama": "Jocelyn"
+      },
+      {
+        "source": "img-div/3Kreatif/13.jpg",
+        "nama": "Tea"
+      },
+      {
+        "source": "img-div/3Kreatif/14.jpg",
+        "nama": "Andini"
       }
     ]
   },
