@@ -68,7 +68,15 @@ export default function Footer() {
       <img src={intersect} alt="" className="intersect position-absolute" />
       <div className="footerbottom">
         <p>
-          Copyright &copy;2025; Designed by <span> DGTS IT Team</span>{" "}
+          <span>
+            Duacare merupakan organisasi social di bawah naungan Ikatan Alumni
+            SMAN 2 Lumajang. Sejak tahun 2008, Duacare memiliki program yang
+            bergerak di bidang pendidikan dan sosial.
+          </span>
+          <br />
+          <span style={{ color: "white" }}>
+            Copyright &copy;2025; Designed by <span> DGTS IT Team</span>{" "}
+          </span>
         </p>
       </div>
     </footer>

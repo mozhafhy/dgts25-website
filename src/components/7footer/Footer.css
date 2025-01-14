@@ -88,12 +88,20 @@ footer .intersect {
   }
 }
 .footerbottom {
-  display: flex;
-  justify-content: center;
+  --padd: clamp();
+
   background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
+  height: fit-content;
+  
+  & p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 60px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .social-icon :hover {
