@@ -11,7 +11,7 @@ export default function Inti({ id }) {
         jabatan="ketua"
         foto="img-inti/Rifqi Fauza_Ketua DGTS.jpg"
         nama="Rifqi Fauza Dani"
-        posisi="Ketua Umum"
+        posisi="Ketua Pelaksana"
       />
 
       <div className="anggota-container">

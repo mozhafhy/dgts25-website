@@ -48,21 +48,12 @@ export default function Footer() {
           <div className="col-6 d-flex justify-content-center align-items-center flex-column contactcol">
             <h2 className="contact">Contact Person</h2>
             <a
-              href="https://wa.me/6282247433645"
+              href="https://wa.me/+6285732912978"
               target="_blank"
               rel="noopener noreferrer"
               className="contacttext"
             >
-              <p className="contacttext"> +62 822-4743-3645 (Riki Nanda)</p>
-            </a>
-
-            <a
-              href="https://wa.me/6282231000810"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contacttext"
-            >
-              <p className="contacttext"> +62 822-3100-0810 (Mandaluna)</p>
+              <p className="contacttext"> +62 857-3291-2978 {"(Duacare)"}</p>
             </a>
           </div>
 
